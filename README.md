@@ -2,7 +2,7 @@
 A platform that allows users spin up a basic website - allow as much customizations as possible.
 
 ## Background
-This project, ***Dsyne***, is a project initiative introduced by the Zuri team. It is useful for anyone sharing large documents. Chunking is simply the process of splitting large files into smaller files called chunks without losing their content or quality.
+This project, ***Dsyne***, is a project initiative introduced by the Zuri team. It is a uplatform that allows users spin up a basic website and allow as much customizations as possible.
 
 ## Objectives
 - 
