@@ -54,7 +54,7 @@ git clone https://github.com/buike5/my_cms.git
 pip install -r requirements.txt
 ```
 
-## Setup Database and make migrations
+### Setup Database and make migrations
 
 <https://simpleisbetterthancomplex.com/2015/11/26/package-of-the-week-python-decouple.html>
 
