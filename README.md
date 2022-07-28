@@ -1,14 +1,47 @@
-# my_cms
-Rough Repo for team 20
+# Dsyne
+A platform that allows users spin up a basic website - allow as much customizations as possible.
 
-I created 5 models:
-Templates
-Users
-Settings
-Pages
-Page_field
+## Background
+This project, ***Dsyne***, is a project initiative introduced by the Zuri team. It is useful for anyone sharing large documents. Chunking is simply the process of splitting large files into smaller files called chunks without losing their content or quality.
 
-# Running Locally
+## Objectives
+- 
+-
+
+## Technologies Used
+- HTML/CSS/Javascript (Frontend)
+- POSTGRESQL (Database)
+- Django - Framework, Python(Backend)
+- FIGMA
+- GIT
+
+## Dsyne
+- Register to setup a new website
+- Browse through available templates
+- Ability to create more pages
+- Unique address
+- Ability to add social media links
+
+
+## Dsyne Key features and release dates
+> Landing page
+
+> FAQ/ContactUs Page
+
+> Create A Website
+
+> About Us
+
+> Documentation Page
+
+
+> Dashboard:
+- *Create A Website*
+- *Profile Page*
+
+
+## Project Status
+> Project is : in progress
 
 ## Running Locally
 
@@ -32,7 +65,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-# **_Making Contribution_**
+## **_Making Contribution_**
 
 ### **_Fork and Clone Repository_**
 
@@ -82,3 +115,5 @@ python manage.py runserver
 13. Click Create pull request to open a new pull request
 
 ### **_`If you are asked to make changes on the same feature, repeat steps 8 to 13 to add more commits to your pull request.`_**
+
+https://github.com/zuri-training/proj_team_20.git
