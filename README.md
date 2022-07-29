@@ -74,7 +74,7 @@ python manage.py runserver
 2. Open New Terminal and Run
 
 ```bash
-py -m venv env
+py -m venv venv
 ```
 
 1. Activate Virtual Env
@@ -82,6 +82,8 @@ py -m venv env
 ```bash
 .\env\Scripts\activate
 ```
+
+[Virtual Environment setup guide](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 ***note: you should be on the same dir as requirements.txt file***
 
