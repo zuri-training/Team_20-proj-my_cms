@@ -17,30 +17,37 @@
 
             <form action="" class="container-form">
 
-                <h2>Login to your account</h2>
-                <div>
-                    <div class="form-login">
-                        <label for="user-email">
-                            Email Address
+                <h1>Login to your account</h1>
+                <div class="row">
+                    <div class="login">
+                        <div>
+                            <label for="user-email">Email Address</label>
                             <input type="email" name="email" id="user-email" placeholder="Jamesbrown@gmail.com">
-                        </label>
-                        <label for="user-password">
-                            Password
+                        </div>
+                        <div>
+                            <label for="user-password">Password</label>
                             <input type="password" name="password" id="user-password">
-                            <small>
-                                <a href="#">Forgot Password?</a>
-                            </small>
-                        </label>
+                        </div>
+                        <small>
+                            <a href="#">Forgot Password?</a>
+                        </small>
                     </div>
 
-                    <div class="form-login-links">
+                    <hr>
+
+                    <div class="login">
                         <button>
+                            <img src="./assets/facebook-icon.svg" alt="">
                             Login with facebook
                         </button>
+
                         <button>
+                            <img src="./assets/google-icon.svg" alt="">
                             Login with Google
                         </button>
+
                         <button>
+                            <img src="./assets/apple-icon.svg" alt="">
                             Login with Apple
                         </button>
                     </div>
@@ -48,10 +55,10 @@
 
                 <button type="submit" class="btn">Login</button>
 
-                <small>
+                <p>
                     Don't have an account?
                     <a href="#">Sign up</a>
-                </small>
+                </p>
 
             </form>
 
