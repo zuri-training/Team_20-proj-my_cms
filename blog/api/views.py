@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from rest_framework import status, generics
+from rest_framework import  generics
 
 from .serializers import CommentSerializer, PostSerializer
-from .models import Comment, Post
+from blog.models import Comment, Post
 
 # Create your views here.
 
