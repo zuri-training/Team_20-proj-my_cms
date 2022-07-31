@@ -31,26 +31,39 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #django-admin style for django_cms
+    'djangocms_admin_style',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    
+
+
     # third party app
     "rest_framework",
     "ckeditor",
     "cloudinary",
-    
+
     # internal app
     "blog",
     'portfolio',
-    
+
+    # django_cms thirdparty apps
+    'django.contrib.sites',
+    'cms',
+    'menus',
+    'treebeard',
+    'sekizai',
+    'translations',
 ]
 
 MIDDLEWARE = [
+    #middleware for django_cms
+    #  'cms.middleware.utils.ApphookReloadMiddleware'
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -58,6 +71,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    #middleware for django_cms
+    'django.middleware.locale.LocaleMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.language.LanguageCookieMiddleware',
 ]
 
 ROOT_URLCONF = 'Dsyne.urls'
@@ -73,6 +93,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                #django_cms templates context processors
+                'cms.context_processors.cms_settings',
+                'django.template.context_processors.i18n',
+                'sekizai.context_processors.sekizai',
             ],
         },
     },
@@ -114,7 +139,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -124,6 +149,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+#setting a site ID for django_cms
+
+SITE_ID = 1
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+USE_I18N = True          
+USE_L10N = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
