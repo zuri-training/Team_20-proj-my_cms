@@ -16,10 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#importing the re path
+from django.urls import re_path, include
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("portfolio/", include("portfolio.urls")),
     path("blog/", include("blog.urls")),
     
+    #path for django_cms
+    re_path(r'^admin/', admin.site.urls),
+    re_path(r'^', include('cms.urls')),
     
 ]
