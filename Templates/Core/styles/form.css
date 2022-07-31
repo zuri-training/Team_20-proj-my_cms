@@ -1,0 +1,148 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+body *{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background: rgba(31, 71, 68, 0.2);
+    background-color: #1F4744;
+    min-width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p a{
+    color: #47A39C
+}
+span{
+    padding-left: 10px;
+}
+
+/* form styles */
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #C6C5C9;
+    width: 900px;
+    height: 550px;
+}
+.row, .signup{
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+}
+.login, .register{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* form styles */
+
+
+
+
+/* Input field Styles */
+.login div, .register div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 70px;
+}
+.login small{
+    align-self: flex-end;
+}
+.login small a{
+    color: #78767F;
+}
+.login div input, .register div input{
+    display: flex;
+    background: #F9FCFF;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.register div input{
+    text-align: start;
+}
+/* Input field Styles */
+
+
+
+
+/* Hidden icon displayed in input */
+.login div input[type=password], .register div input[type=password]{
+    background-image: url(../assets/password-hidden-icon.svg);
+    background-position: 270px 10px;
+    background-repeat: no-repeat;
+}
+/* Hidden icon displayed in input */
+
+
+
+/* Links styling */
+.login input[type=button], .register input[type=button]{
+    background-repeat: no-repeat;
+    background-color: #F9FCFF;
+    width: 300px;
+    height: 43px;
+    border: none;
+    border-radius: 10px;
+}
+.login #facebook, .register #facebook{
+    background-position: 55px 10px;
+    background-image: url(../assets/facebook-icon.svg);
+}
+.login #google, .register #google{
+    background-position: 60px 10px;
+    background-image: url(../assets/google-icon.svg);
+}
+.login #apple, .register #apple{
+    background-position: 65px 10px;
+    background-image: url(../assets/apple-icon.svg);
+}
+/* Links styling */
+
+
+
+
+
+
+
+/* vertical line styling */
+.row hr, .signup hr{
+    background: black;
+    width: 1px;
+}
+.row hr{
+    height: 190px;
+}
+.signup hr{
+    height: 250px;
+}
+/* vertical line styling */
+
+
+.btn{
+    background: #2F6A66;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    width: 167px;
+    height: 50px;
+}
