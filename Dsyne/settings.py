@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'portfolio',
+    
     
     # third party app
     "rest_framework",
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     
     # internal app
     "blog",
+    'portfolio',
     
 ]
 
