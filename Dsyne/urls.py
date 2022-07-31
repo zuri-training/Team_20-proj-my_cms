@@ -20,12 +20,15 @@ from django.urls import path, include
 from django.urls import re_path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
+    # Portfolio url
     path("portfolio/", include("portfolio.urls")),
+    # blogPost url
     path("blog/", include("blog.urls")),
     
     #path for django_cms
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^', include('cms.urls')),
-    
+    # url for blog restApi
+    path("api/v1/blog/", include("blog.api.urls")),
 ]
