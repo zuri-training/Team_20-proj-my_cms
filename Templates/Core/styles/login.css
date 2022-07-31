@@ -1,0 +1,105 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+body *{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background: rgba(31, 71, 68, 0.2);
+    background-color: #1F4744;
+    min-width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p a{
+    color: #47A39C
+}
+span{
+    padding-left: 10px;
+}
+
+/* form styles */
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #C6C5C9;
+    width: 900px;
+    height: 500px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.login div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 70px;
+}
+.login small{
+    align-self: flex-end;
+}
+.login small a{
+    color: #78767F;
+}
+.login div input{
+    display: flex;
+    background: #F9FCFF;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hidden ixon displayed in input */
+.login div input[type=password]{
+    background-image: url(../assets/password-hidden-icon.svg);
+    background-position: 270px 10px;
+    background-repeat: no-repeat;
+}
+/* Hidden ixon displayed in input */
+
+.login button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F9FCFF;
+    width: 300px;
+    height: 43px;
+    border: none;
+    border-radius: 10px;
+}
+.row hr{
+    background: black;
+    width: 1px;
+    height: 190px;
+}
+.btn{
+    background: #2F6A66;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    width: 167px;
+    height: 50px;
+}
