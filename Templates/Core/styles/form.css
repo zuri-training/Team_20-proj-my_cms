@@ -6,13 +6,33 @@ body *{
     font-family: 'Work Sans', sans-serif;
 }
 body{
-    background: rgba(31, 71, 68, 0.2);
-    background-color: #1F4744;
+    background-image: url(../assets/Rectangle\ 62.jpg);
     min-width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: themove 10s infinite ease-in-out;
+    /* animation-fill-mode: both; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
+
+/* background animation */
+@keyframes themove {
+    50%{
+        background-image: url(../assets/Rectangle\ 62\(1\).jpg);
+    }
+    80%{
+        background-image: url(../assets/Rectangle\ 62\ \(2\).jpg);
+    }
+    100%{
+        background-image: url(../assets/Rectangle\ 62.jpg);
+    }
+}
+/* background animation */
+
+
 a{
     text-decoration: none;
 }
