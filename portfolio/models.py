@@ -17,7 +17,7 @@ class Certification(models.Model):
     credentialid = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -25,7 +25,7 @@ class Certification(models.Model):
 
 # Education Model that returns Education name
 class Education(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
     degree_name = models.CharField(max_length=255)
     institute_name = models.CharField(max_length=255)
     started_at = models.DateTimeField(blank=True)
@@ -42,7 +42,7 @@ class Education(models.Model):
 
 class Project(models.Model):
     name = models.CharField(max_length=255)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
     description = models.CharField(max_length=255)
     project_url = models.URLField(max_length=255)
     created = models.DateTimeField(auto_now_add=True)
