@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-z-*l#b#9_0gvk*t4o+3n*d71*v6-ce6r97za!@&wfnz&p6p#60
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -92,7 +92,7 @@ ROOT_URLCONF = "Dsyne.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ["templates"],
+        "DIRS": ["account/templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -100,6 +100,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                
                 # django_cms templates context processors
                 "cms.context_processors.cms_settings",
                 "django.template.context_processors.i18n",
