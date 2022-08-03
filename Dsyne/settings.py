@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -46,6 +46,20 @@ INSTALLED_APPS = [
     # internal app
     "blog",
     "portfolio",
+    # main app
+    "account",
+    # for django filer
+    "filer",
+    "easy_thumbnails",
+    "mptt",
+    # micelleneous plugins
+    "djangocms_link",
+    "djangocms_file",
+    "djangocms_picture",
+    "djangocms_video",
+    "djangocms_googlemap",
+    "djangocms_snippet",
+    "djangocms_style",
     # django_cms thirdparty apps
     "django.contrib.sites",
     "cms",
@@ -57,7 +71,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     # middleware for django_cms
-    #  'cms.middleware.utils.ApphookReloadMiddleware'
+    "cms.middleware.utils.ApphookReloadMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -78,7 +92,7 @@ ROOT_URLCONF = "Dsyne.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ['templates'],
+        "DIRS": ["templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -159,6 +173,27 @@ USE_L10N = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/static/"
+
+# add the directory of your static files here.
+# Make sure the name are different from those of other static files
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    # e.g "/var/www/static/",
+]
+
+# media urls for django_cms
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# for thumbnail filer
+THUMBNAIL_HIGH_RESOLUTION = True
+
+THUMBNAIL_PROCESSORS = (
+    "easy_thumbnails.processors.colorspace",
+    "easy_thumbnails.processors.autocrop",
+    "filer.thumbnail_processors.scale_and_crop_with_subject_location",
+    "easy_thumbnails.processors.filters",
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
