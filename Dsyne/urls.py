@@ -19,8 +19,12 @@ from django.urls import path, include
 # importing the re path
 from django.urls import re_path, include
 
+# for media handling
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("admin-django/", admin.site.urls),
     # Portfolio url
     path("portfolio/", include("portfolio.urls")),
     # blogPost url
@@ -30,4 +34,5 @@ urlpatterns = [
     re_path(r"^", include("cms.urls")),
     # url for blog restApi
     path("api/v1/blog/", include("blog.api.urls")),
-]
+    # urls for media
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
