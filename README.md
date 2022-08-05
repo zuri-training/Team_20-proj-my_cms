@@ -47,7 +47,7 @@ This project, ***Dsyne***, is a project initiative introduced by the Zuri team. 
 ## Running Locally
 
 ```bash
-git clone https://github.com/buike5/my_cms.git
+git clone "https://github.com/zuri-training/proj_team_20.git"
 ```
 
 ```bash
