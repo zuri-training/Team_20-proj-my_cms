@@ -14,8 +14,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     animation: themove 10s infinite ease-in-out;
-    /* animation-fill-mode: both; */
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 /* background animation */
@@ -50,6 +48,8 @@ span{
     padding-left: 10px;
 }
 
+
+
 /* form styles */
 .container-form{
     display: flex;
@@ -58,7 +58,7 @@ span{
     align-items: center;
     background: #C6C5C9;
     width: 900px;
-    height: 550px;
+    height: 500px;
 }
 .row, .signup{
     display: flex;
@@ -141,9 +141,6 @@ span{
 
 
 
-
-
-
 /* vertical line styling */
 .row hr, .signup hr{
     background: black;
@@ -166,3 +163,13 @@ span{
     width: 167px;
     height: 50px;
 }
+
+
+/* Media queries */
+@media (max-width: 980px){
+    .container-form{
+        width: 750px;
+        height: 450px;
+    }
+}
+/* Media queries */
