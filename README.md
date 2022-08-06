@@ -44,7 +44,7 @@ This project, ***Dsyne***, is a project initiative introduced by the Zuri team. 
 
 > Project is : in progress
 
-## Running Locally
+## Running Locally.
 
 ```bash
 git clone "https://github.com/zuri-training/proj_team_20.git"
