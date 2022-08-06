@@ -9,9 +9,7 @@
 </head>
 <body>
     <!-- navvvvv -->
-<section class="first-section">
     <header>
-        <div class="header">
             <div class="logo-section">
                 <div class="logo-img-bg">
                     <p>Logo</p>
@@ -21,13 +19,46 @@
             <!-- Navigation Bar -->
             <nav class="navbar">
                 <ul class="nav-container">
-                    <li><a class="nav-links" href="#">About</a></li>
-                    <li><a class="nav-links" href="#">Work</a></li>
-                    <li><a class="nav-links" href="#">Contact</a></li>
+                    <li><a class="nav-links top-links" href="about.html">About</a></li>
+                    <li><a class="nav-links top-links" href="work.html">Work</a></li>
+                    <li><a class="nav-links top-links" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
+
+    <!-- Main Body -->
+    <section class="form-container">
+        <h2 class="form-heading">Contact Me</h2>
+        <form>
+            <div class="input-wrapper">
+                <div class="input-container">
+                    <label for="fName">First Name</label>
+                    <input class="form-inputs" type="text" name="fName">
+                </div>
+
+                <div class="input-container">
+                    <label for="lName">Last Name</label>
+                <input class="form-inputs" type="text" name="lName">
+                </div>
+
+                <div class="input-container">
+                    <label for="email">Email</label>
+                <input class="form-inputs" type="email" name="email">
+                </div>
+
+                <div class="input-container">
+                    <label for="purpose">Purpose</label>
+                <input class="form-inputs" type="text" name="purpose">
+                </div>  
+            </div>
+
+            <div class="form-message-section">
+                <label for="message">Message</label>
+                <textarea name="message"cols="30" rows="10"></textarea>
+                <button class="form-btn" type="submit">Send</button>
+            </div>
+        </form>
+    </section>
 
 <!-- footerrrr -->
 <footer class="container">
