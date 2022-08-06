@@ -169,7 +169,6 @@ span{
 @media (max-width: 980px){
     .container-form{
         width: 750px;
-        height: 450px;
     }
 }
 /* Media queries */
