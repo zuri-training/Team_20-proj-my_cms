@@ -1,25 +1,23 @@
 {% block content %}
-<h2>Register</h2>
-
-<!-- <form method="post">
-    {% csrf_token %}
-    {{form}}
-    <table>
-        {{ form.as_p }}
-        Hello
-        <tr>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
-    <input type="submit" value="Register">
-</form> -->
-
-<form method="post">
-    {{ user_form.as_p }}
-    {% csrf_token %}
-    <p><input type="submit" value="Create my account"></p>
-  </form>
-
+<h1>Register</h1>
 <a href="{% url 'login' %}">Back to login</a>
 <a href="{% url 'home' %}">Back to Home</a>
-{% endblock %}
+<form method="post">   {% csrf_token %}
+    {% for field in registration_form %} 
+    <p>
+        {{field.label_tag}}
+        {{field}}
+
+        {% if field.help_text %}
+            <small style="color:gray">{{field.help_text}}</small>
+        {% endif %}
+
+        {% for error in field.errors %}
+            <p style="color:red;">{{error}}</p>
+        {% endfor %}
+    </p>
+    {% endfor %}
+    <button type="submit">Register</button>    
+</form>  
+ 
+{% endblock content%}
