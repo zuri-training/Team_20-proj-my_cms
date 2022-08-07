@@ -92,7 +92,7 @@ ROOT_URLCONF = "Dsyne.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ["account/templates"],
+        "DIRS": [BASE_DIR /"templates_account"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
