@@ -2,7 +2,7 @@
 <h1>Register</h1>
 <a href="{% url 'login' %}">Back to login</a>
 <a href="{% url 'home' %}">Back to Home</a>
-<form method="post">   {% csrf_token %}
+<form method="post">{% csrf_token %}
     {% for field in registration_form %} 
     <p>
         {{field.label_tag}}
@@ -20,4 +20,4 @@
     <button type="submit">Register</button>    
 </form>  
  
-{% endblock content%}
+{% endblock content %}
