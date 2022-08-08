@@ -115,7 +115,11 @@ TEMPLATES = [
 
 # templates config for django_cms
 CMS_TEMPLATES = [
-    ("home.html", "Home page template"),
+    ("landing-page.html", "Home page template"
+     "template.html", "templates page"
+     "contact-us.html", "contact page"
+     "support.html", "support page"
+    ),
 ]
 
 WSGI_APPLICATION = "Dsyne.wsgi.application"
