@@ -1,23 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Create an account{% endblock %}
+
 {% block content %}
-<h1>Register</h1>
-<a href="{% url 'login' %}">Back to login</a>
-<a href="{% url 'home' %}">Back to Home</a>
-<form method="post">{% csrf_token %}
-    {% for field in registration_form %} 
-    <p>
-        {{field.label_tag}}
-        {{field}}
+  <h1>Create an account</h1>
+  <p>Please, sign up using the following form:</p>
+  <form method="post">
+    {{ user_form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Create my account"></p>
+  </form>
+{% endblock %}
 
-        {% if field.help_text %}
-            <small style="color:gray">{{field.help_text}}</small>
-        {% endif %}
-
-        {% for error in field.errors %}
-            <p style="color:red;">{{error}}</p>
-        {% endfor %}
-    </p>
-    {% endfor %}
-    <button type="submit">Register</button>    
-</form>  
- 
-{% endblock content %}

@@ -1,0 +1,21 @@
+<!-- {% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+  <h1>Welcome {{ new_user.first_name }}!</h1>
+  <p>Your account has been successfully created. Now you can <a href="{% url "login" %}">log in</a>.</p>
+{% endblock %} -->
+
+{% block content %}
+<h2>Register</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Register">
+</form>
+
+<a href="{% url 'login' %}">Back to login</a>
+<a href="{% url 'home' %}">Back to Home</a>
+{% endblock %}

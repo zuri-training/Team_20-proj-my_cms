@@ -1,31 +1,51 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
-        <style>
-         body {
-          color: pink;
-          text-align: center;
-          } 
-     
-        </style>
+  <title>{% block title %}{% endblock %}</title>
+  <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello, {{ user.username|default:'Guest' }}</h1>
+  <div id="header">
+    <span class="logo">Welcome to Group 20 CMS</span>
+    {% if request.user.is_authenticated %}
+    <ul class="menu">
+      <li {% if section == "dashboard" %}class="selected"{% endif %}>
+        <a href="{% url "dashboard" %}">My dashboard</a>
+      </li>
+      <li {% if section == "images" %}class="selected"{% endif %}>
+        <a href="#">Images</a>
+      </li>
+      <li {% if section == "people" %}class="selected"{% endif %}>
+        <a href="#">People</a>
+      </li>
+    </ul>
+  {% endif %}
+  <span class="user">
+    {% if request.user.is_authenticated %}
+      Hello {{ request.user.first_name }},
+      <a href="{% url "logout" %}">Logout</a>
+    {% else %}
+      <a href="{% url "login" %}">Login</a>
+      <a href="{% url "register" %}">Register</a>
+    {% endif %}
+  </span>
+  </div>
 
-    <p> Welcome to Team 20 CMS</p>
-    <div>
-      {% if user.is_authenticated %}
-          <!-- <a href="{% url 'logout' %}">Logout</a> -->
-    
-      {% else %}
-          <a href="{% url 'login' %}">Login</a>
-          <a href="{% url 'register' %}">Register</a>
-      {% endif %}
-  </body>
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li class="{{ message.tags }}">
+          {{ message|safe }}
+            <a href="#" class="close">x</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
 </html>
-
-
