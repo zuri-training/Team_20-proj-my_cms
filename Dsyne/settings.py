@@ -115,7 +115,11 @@ TEMPLATES = [
 
 # templates config for django_cms
 CMS_TEMPLATES = [
-    ("home.html", "Home page template"),
+    ("landing-page.html", "Home page template"
+     "template.html", "templates page"
+     "contact-us.html", "contact page"
+     "support.html", "support page"
+    ),
 ]
 
 WSGI_APPLICATION = "Dsyne.wsgi.application"
@@ -150,7 +154,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+)
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
