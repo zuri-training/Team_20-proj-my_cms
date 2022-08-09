@@ -116,9 +116,7 @@ TEMPLATES = [
 # templates config for django_cms
 CMS_TEMPLATES = [
     ("landing-page.html", "Home page template"
-     "template.html", "templates page"
-     "contact-us.html", "contact page"
-     "support.html", "support page"
+    
     ),
 ]
 
