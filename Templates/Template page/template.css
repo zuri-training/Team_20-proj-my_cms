@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
 /* resets */
 *,
 *::before,
@@ -341,6 +342,7 @@ a {
     /* position: absolute;
     right: 116px;
     bottom: -277% */
+    margin-right: 60px;
 }
 
 #box {
@@ -348,6 +350,25 @@ a {
     height: 300px;
     border: 1px solid var(--second-text);
 }
+.box-img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.img1 {
+    background: url(./images/frame1\ \(1\)\ \(1\).png) center center no-repeat;
+}
+
+.img2 {
+    background: url(./images/frame2\ \(1\).png) center center no-repeat;
+}
+
+.img3 {
+    background: url(./images/frame3\ \(1\).png) center center no-repeat;
+}
+
+
 
 .container-box {
     font-family: 'Inder';
@@ -409,8 +430,8 @@ footer {
     font-family: 'Inder';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 20px;
     margin-top: 20px;
     /* margin:55px  auto; */
 }
@@ -440,9 +461,12 @@ footer {
 
 }
 
-/* .about .company-logo {
-    width: 400px;
-} */
+
+ .company-logo {
+    width: 35px;
+ }
+    
+
 
 .socials {
     display: flex;
@@ -464,96 +488,233 @@ footer {
     /* flex-direction: row; */
 }
 
-/* media queries for main */
+/* /* media queries for main */
 
-@media screen and (min-width: 375px) and (max-width: 600px) {
-    body {
-        max-width: 100vw;
-    }
-
+@media screen and (min-width: 360px) and (max-width: 414px) {
     .first-text {
-        font-family: "Candara";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 21px;
-        line-height: 35px;
-        text-align: center;
-        margin: 78px 0 30px;
+        line-height: 45px;
+        font-size: 25px;
     }
-    
-    .second-text {
-        font-family: "Inder";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        padding: 0 56px;
-    }
-    
-    .third-text {
-        margin-top: 92px;
-        margin-bottom: 20px;
-        font-family: 'Candara';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 35px;
-    }   
 
-    #box {
-        width: 300px;
-        height: 180px;
-        border: 1px solid black;
+    .second-text {
+        line-height: 16px;
+        font-size: 12px;
+        width: auto;
+    }
+
+    .third-text {
+        line-height: 39px;
+        font-size: 30px;
     }
 
     .temp-grid-container1, .temp-grid-container2 {
-        display: grid;
-        gap: 15px;
-        place-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #box {
+        width: 200px;
+        height: 150px;
+    }
+
+    .next-btn {
         justify-content: center;
-        grid-template-columns: 1fr;
-        width: 100%;
     }
 
     footer {
-        background-color: #1F4744;
-        height: 100%;
-        width: 100%;
+        height: auto;
         margin-top: 30px;
-        color: #fff;
-        padding: 30px 0;
+        margin-bottom: 20px;
+        padding-top: 32px;
     }
 
     .footer-container {
-        margin: 0 auto;
-        width: 80%;
-        display: grid;
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 30px;
     }
 
-    .about .company-logo {
+    .align-footer {
+        padding-top: 26px;
+    }
+
+    .footer-header {
+        font-size: 24px;
+        line-height: 17px;
+    }
+
+    .footer-item {
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .company-logo {
+        width: 165px;
+    }
+
+    #platform {
+        line-height: 12px;
+        font-size: 10px;
+    }
+
+    .footer-item1 {
+        padding-right: 20px;
+    }
+
+    .about {
+        min-width: 100%;
+    }
+
+    .socials {
+        margin: 20px 0;
+        min-width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS */
+@media screen and (min-width: 688px) and (max-width: 1023px) {
+    .first-text {
+        line-height: 55px;
+        font-size: 35px;
+    }
+
+    .second-text {
+        line-height: 26px;
+        font-size: 22px;
+        width: auto;
+    }
+
+    .third-text {
+        line-height: 39px;
+        font-size: 30px;
+    }
+
+    .temp-grid-container1, .temp-grid-container2 {
+        min-width: 80%;
+        margin: 0 auto;
+    }
+
+    .temp-grid-container1 {
+        gap: 15px;
+    }
+
+    .temp-grid-container2 {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    #box {
+        width: 200px;
+        height: 150px;
+    }
+
+    .next-btn {
+        justify-content: center;
+    }
+
+    footer {
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-top: 32px;
+    }
+
+    .footer-container {
+        width: 85%;
+        column-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .align-footer {
+        padding-top: 26px;
+    }
+
+    .footer-header {
+        font-size: 24px;
+        line-height: 17px;
+    }
+
+    .footer-item {
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .company-logo {
+        width: 165px;
+    }
+
+    #platform {
+        line-height: 12px;
+        font-size: 10px;
+    }
+
+    .footer-item1 {
+        padding-right: 20px;
+    }
+
+    .about {
+        min-width: 100%;
+        margin-top: 20px;
+    }
+
+    #yearText {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .socials {
+        margin: 20px 0;
+        padding: 0;
+        justify-content: center;
+    }
+    
+    .fa {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .temp-grid-container1, .temp-grid-container2 {
+        min-width: 80%;
+        margin: 0 auto;
+    }
+
+    .temp-grid-container1 {
+        gap: 15px;
+    }
+
+    .temp-grid-container2 {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    #box {
+        width: 300px;
+        height: 255px;
+    }  
+
+    .about {
+        min-width: 100%;
+    }
+
+    .company-logo {
         width: 200px;
     }
 
     .socials {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 20px 0;
-        width: 100%;
-        padding: 20px 200px 0 0;
+        margin: 20px 0;
+        padding: 0;
+        justify-content: center;
     }
+
     
-    .fa {
-        color: #fff;
-        margin-right: 15px;
+    #platform {
+        line-height: 17px;
+        font-size: 15px;
     }
-    
-    .align-footer {
-        padding-top: 57px;
-    }
+
+    #yearText {
+        font-size: 20px;
+        line-height: 20px;
+    }    
 }
