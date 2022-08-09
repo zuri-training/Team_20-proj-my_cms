@@ -15,7 +15,6 @@ body *{
 }
 body{
     background-image: url(../assets/Rectangle\ 62.jpg);
-    background-color: var(--bg-color);
     min-width: 100%;
     height: 100vh;
     margin: 0;
@@ -50,19 +49,20 @@ ul *{
 list-style: none;
 }
 :root{
---clr-content:  rgba(31, 71, 68, 1);
---Pastel-Turquoise:  rgba(31, 71, 68, 1);
---light-Pastel-Turquoise: rgba(5, 130, 142, 1); 
---lighter-pastel-Turquoise: rgba(41, 205, 201, 1);
---lightest-pastel-Turquoise: rgba(71, 163, 156, 1);
---toggle-lightmode:rgba(102, 252, 241, 1);
---toggle-btn: rgba(42, 45, 60, 1);
---white:rgba(255, 255, 255, 1);
---container-bg: #C6C5C9;
---container-bg-2: #C6C5C9;
---text-color: #000000;
---bg-gray: #F3F3F3;
---bg-color: #F3F3F3;
+    --clr-content:  rgba(31, 71, 68, 1);
+    --Pastel-Turquoise:  rgba(31, 71, 68, 1);
+    --light-Pastel-Turquoise: rgba(5, 130, 142, 1); 
+    --lighter-pastel-Turquoise: rgba(41, 205, 201, 1);
+    --lightest-pastel-Turquoise: rgba(71, 163, 156, 1);
+    --toggle-lightmode:rgba(102, 252, 241, 1);
+    --toggle-btn: rgba(42, 45, 60, 1);
+    --white:rgba(255, 255, 255, 1);
+    --container-bg: #C6C5C9;
+    --container-bg-2: #C6C5C9;
+    --text-color: #000000;
+    --bg-gray: #F3F3F3;
+    --bg-color: #F3F3F3;
+    --bg-color-2: #FFFFFF;
 }
 /* dark theme/light theme toggle */
 .dark-mode{
@@ -70,6 +70,7 @@ list-style: none;
     --hero-section-paragraph: rgba(255, 255, 255, 1);
     --bg-gray: rgba(31, 34, 45, 1);
     --bg-color: #1F4774;
+    --bg-color-2: #000000;
     --container-bg: #1F4744;
     --container-bg-2: #15171E;
     --text-color: #FFFFFF;
@@ -123,17 +124,6 @@ font-family: 'Inder', sans-serif;
     border: none;
     cursor: pointer;
     font-family: 'Inder';
-}
-#drop-down{
-    color: var(--clr-content);
-    height: 3rem;
-    width: 3rem;
-    display: inline-flex;
-}
-#drop-btn{
-    display: flex;
-    gap: 0;
-    align-items: center;
 }
 .login-btn{
     background-color: #2F6A66;
@@ -202,20 +192,30 @@ font-family: 'Inder', sans-serif;
 .show{
     display: none;
 }
+#select-field{
+    position: relative;
+}
+#drop-btn{
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
 .drop-menu{
     position: absolute;
-    left: 8rem;
-    top: 5rem;
+    left: 70px;
+    top: 30px;
     background-color: var(--white);
-    padding: 1rem;
-    width: 16rem;
+    padding: 20px;
+    width: 180px;
     padding-right: 0;
     border-radius: 10px;
-    
+    font-size: 15px;
+    color: var(--Pastel-Turquoise);
+    font-family: 'inder';
 }
 .drop-down-options{
     color: var(--light-pastel-Turquoise);
-    font-size: 1.5rem;
+    font-size: 13px;
     font-family: inder;
 }
 #drop-menu{
@@ -226,16 +226,18 @@ font-family: 'Inder', sans-serif;
     color: var(--lighter-pastel-Turquoise);
 }
 .drop-menu ul li{
-    margin: 1rem;
+    margin: 10px;
 }
-.drop-menu{
-    font-size:1.5rem;
-    color: var(--Pastel-Turquoise);
-    font-family: inder;
+#drop-list{
+    padding: 0;
 }
-.hidden-for-mobile{
-    display: none;
+#drop-list a{
+    color: #000000;
 }
+#drop-list a:hover{
+    color: var(--lighter-pastel-Turquoise);
+}
+
 
 /* MEDIA QUERIES FOR the NAV */
 @media screen and (min-width:500px){

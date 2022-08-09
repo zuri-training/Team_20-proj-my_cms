@@ -43,7 +43,7 @@ document.querySelector('#menu').addEventListener('click', classToggle)
 function dropMenu(){
     const drops = document.querySelector('#drop-menu')
     if(drops.style.display == "none"){
-        drops.style.display = "block"
+        drops.style.display = "inline-block"
     }else{
         drops.style.display = "none"
     }
