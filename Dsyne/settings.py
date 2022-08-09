@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-z-*l#b#9_0gvk*t4o+3n*d71*v6-ce6r97za!@&wfnz&p6p#60"
+SECRET_KEY = config("SECRET_KEY")
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_extensions",
     # third party app
     "rest_framework",
     "ckeditor",
@@ -92,7 +95,7 @@ ROOT_URLCONF = "Dsyne.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ["account/templates"],
+        "DIRS": [BASE_DIR /"templates_account"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -112,7 +115,11 @@ TEMPLATES = [
 
 # templates config for django_cms
 CMS_TEMPLATES = [
-    ("home.html", "Home page template"),
+    ("landing-page.html", "Home page template"
+     "template.html", "templates page"
+     "contact-us.html", "contact page"
+     "support.html", "support page"
+    ),
 ]
 
 WSGI_APPLICATION = "Dsyne.wsgi.application"
@@ -147,7 +154,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+)
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 

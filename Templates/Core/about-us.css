@@ -1,0 +1,516 @@
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
+body{
+    background: #F3F3F3!important;
+    font-size: 18px;
+}
+
+
+
+.container{
+    font-family: 'Inder', sans-serif;
+    font-size: 18px;
+
+}
+a{
+    color: #000 !important;
+    text-decoration: none !important;
+}
+a, p{
+    font-size: 18px !important;
+    font-family: 'Inder', sans-serif !important;
+}
+img{
+    max-width: 100%;
+}
+
+/* NAVBAR STYLING */
+
+/* light mode navbar styling */
+a.navbar-brand img{
+    width: 90px;
+    height: 90px;
+}
+
+.nav-bg{
+    background: #eee;
+}
+
+.nav-link .btn-1{
+    background: #47A39C;
+    color: #fff;
+    font-size: 10px;
+    width: 104.17px;
+}
+
+.nav-link .btn-2{
+    background: #fff;
+    font-size: 10px;
+    border: 1px solid #47A39C;
+}
+
+/* dark mode navbar styling */
+
+.dark-mode {
+    background-color: rgba(31, 34, 45, 1) !important;
+    color: white !important;
+  }
+
+button.navbar-dark{
+    display: none !important;
+}
+
+
+.darkMode-img{
+    display: none;
+}
+
+
+.dark-mode a{
+    color: white !important;
+  }
+
+
+
+.container .head-text{
+    font-family: 'Candara' !important;
+font-style: normal !important;
+font-weight: 1000 !important;
+font-size: 55px !important;
+line-height: 75px !important;
+}
+
+.container .aboutUs-text{
+    font-family: 'Candara'!important;
+font-style: normal;
+font-weight: 400 !important;
+font-size: 45px !important;
+line-height: 59px !important;
+}
+
+.showcase-left p.showcase-text{
+    font-family: 'Candara' !important;
+font-style: normal !important;
+font-weight: 700 !important;
+font-size: 50px !important;
+line-height: 50px !important;
+
+}
+
+
+.showcase-right .showcase-text{
+    font-family: 'Candara' !important;
+font-style: normal;
+font-weight: 400;
+font-size: 24px !important;
+line-height: 25px !important;
+
+}
+
+.bottom-text p.final-text{
+    font-family: 'Candara' !important;
+    font-size: 40px !important;
+    line-height: 50px !important;
+    font-weight: 1000 !important;
+}
+
+.bottom-text p.final-text-2{
+    font-family: 'Candara' !important;
+    font-size: 27px !important;
+    line-height: 29px !important;
+    font-weight: 400 !important;
+}
+
+
+div a.nav-link button.btn-1{
+    background-color: var(--Pastel-Turquoise);
+    padding: 1rem 2rem !important;
+    border-radius: 12px !important; 
+    color: var(--white);
+    font-size: 1rem !important;
+}
+
+div a.nav-link button.btn-1:hover{
+    background-color: var(--light-Pastel-Turquoise);
+    color: var(--black);
+}
+
+
+div a.nav-link button.btn-1:active{
+    background-color: var(--lighter-pastel-Turquoise);
+}
+
+/* FOOTER STYLING */
+
+p.support, p.product, p.company{
+    font-family: 'Candara' !important;
+    font-size: 27px !important;
+    font-weight: 700 !important;
+}
+
+ 
+.footer-end p.logo-text a.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+    color: black;
+}
+ 
+.footer-end img{
+    max-width: 100%;
+    max-height: 100%;
+    height: 95px;
+    width: 100px;
+    vertical-align: bottom;
+    position: relative;
+    bottom: 25px;
+    left: -7px;
+
+}
+
+.footer-end .logo-text{
+    padding: 0%;
+    margin-top: 0%;
+    border: 0;
+    position: relative;
+    top: -16%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+ 
+#dsyne {
+    padding: 0%;
+    margin-top: 0%;
+    border: 0;
+    position: relative;
+}
+ 
+ 
+/* */
+
+
+
+
+@media screen and (max-width:990px){ 
+    .dark-mode button.navbar-dark{
+        display: block !important;
+    }
+
+    .footer-content .row p{
+        text-align: center;
+    }
+
+    .showcase-text{
+        text-align: center;
+    }
+
+    .bottom-text p.final-text{
+        text-align:start !important;
+    }
+
+    .bottom-text p.final-text-2{
+        text-align: center !important;
+    }
+
+    .footer-end{
+        display: grid;
+        place-items: center;
+    }
+
+    .footer-end img{
+        position:relative;
+        top: 0px;
+        bottom: 10px;
+        /* left: 145px; */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* main-navbar styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+/* resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+  margin: 0;
+}
+html {
+    font-size: 62.5% !important;
+  }
+a {
+    text-decoration: none ;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  :root{
+    --clr-content:  rgba(31, 71, 68, 1);
+    --Pastel-Turquoise:  rgba(31, 71, 68, 1);
+    --light-Pastel-Turquoise: rgba(5, 130, 142, 1); 
+    --lighter-pastel-Turquoise: rgba(41, 205, 201, 1);
+    --lightest-pastel-Turquoise: rgba(71, 163, 156, 1);
+    --toggle-lightmode:rgba(102, 252, 241, 1);
+    --toggle-btn: rgba(42, 45, 60, 1);
+    --white:rgba(255, 255, 255, 1);
+    --bg-gray: #F3F3F3;
+  }
+/* dark theme/light theme toggle */
+.dark-mode{
+    --clr-content:  rgba(255, 255, 255, 1);
+    --hero-section-paragraph: rgba(255, 255, 255, 1);
+    --bg-gray: rgba(31, 34, 45, 1);
+    --toggle-lightmode:rgba(198, 197, 201, 1);
+}
+  /* STYLING OF THE NAV */
+
+  header{
+    max-width: 134rem;
+    margin: 0 auto;
+  }
+  .logo{
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+  .nav-container .logo-container{
+    position: relative !important;
+
+  }
+  .nav-container img.top-image{
+    position:  absolute !important;
+    opacity: 0;
+  }
+  .top-image:hover{
+    opacity: 1;
+  }
+  .nav-container{
+    padding-inline: 3rem ;
+  }
+  .nav-bar{
+    background-color: var(--bg-gray);
+    width: 100%;
+    border-radius: 6px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .nav-bar,
+  .nav-items,
+  .nav-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links{
+    color: var(--clr-content);
+    font-size: 1.8rem;
+    font-family: 'Inder', sans-serif;
+/* font-style: normal;
+font-weight: 400;
+font-size: 20px !important;
+line-height: 30px; */
+}
+.nav-links:hover{
+    color: var(--lighter-pastel-Turquoise) !important;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    font-family: inder;
+}
+#drop-down{
+    color: var(--clr-content);
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+}
+#drop-btn{
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+.login-btn{
+    background-color: var(--Pastel-Turquoise);
+    padding: 1rem 4rem;
+    border-radius: 12px; 
+    color: var(--white);
+    font-size: 1.5rem;
+}
+.login-btn:hover{
+    background-color: var(--light-Pastel-Turquoise);
+    color: var(--black);
+}
+.login-btn:active{
+    background-color: var(--lighter-pastel-Turquoise);
+}
+.signup-btn{
+    background-color: var(--white);
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    border: 1px solid var(--Pastel-Turquoise);
+}
+.signup-btn:hover{
+    color: var(--lighter-pastel-Turquoise);
+}
+.signup-btn:active{
+    color: var(--lightest-pastel-Turquoise);
+}
+.color-switch{
+    padding: 0 1rem;
+    height: 3.2rem;
+    width: 6.4rem;
+    border-radius: 2rem;
+    background-color: var(--toggle-lightmode);
+    display: inline-block;
+    position: relative;
+}
+.color-switch-toggle{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    background-color: var(--toggle-btn);
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+#input-color-switch{
+    display: none;
+}
+#input-color-switch:checked ~ label .color-switch-toggle{
+    transform: translateX(3em);
+}
+#menu,
+.menu{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1.8rem;
+    margin-top: 1rem;
+    color: var(--Pastel-Turquoise);
+}
+#menu.show{
+    display: block;
+}
+.show{
+    display: none;
+}
+.nav-bar ul li{
+    position: relative;
+}
+.drop-menu{
+    position: absolute;
+    left: 8rem;
+    top: 5rem;
+    background-color: var(--white);
+    padding: 1rem;
+    width: 16rem;
+    padding-right: 0;
+    border-radius: 10px;
+    
+}
+.drop-down-options{
+    color: var(--light-pastel-Turquoise);
+    font-size: 1.5rem;
+    font-family: inder;
+}
+#drop-menu{
+    display: none;
+}
+.drop-down-options:hover,
+#drop-down:hover{
+    color: var(--lighter-pastel-Turquoise);
+}
+.drop-menu ul li{
+    margin: 1rem;
+}
+.drop-menu{
+    font-size:1.5rem;
+    color: var(--Pastel-Turquoise);
+    font-family: inder;
+}
+.hidden-for-mobile{
+    display: none;
+}
+
+/* MEDIA QUERIES FOR the NAV */
+@media screen and (min-width:1036px){
+    header{
+        padding: 0 4rem;
+        padding-top: 3rem;
+        background: var(--bg-gray);
+    }
+    .hidden-for-desktop{
+        display: none;
+    }
+    .logo{
+        width: 10rem;
+        height: 10rem;
+      }
+    .nav-bar,
+    .nav-items,
+    .nav-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-container{
+        padding-inline: 4rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      .nav-bar{
+       gap: 4rem;
+      }
+      .nav-items{
+        gap: 4rem;
+      }
+      .hidden-for-mobile{
+        display: block;
+    }
+    }
+      @media screen and (min-width:1300px){
+        /* .nav-container{
+            padding-inline: 12rem;
+      } */
+      .nav-bar{
+        gap: 7rem;
+       }
+      .nav-items,
+      .nav-container{
+        gap: 6rem;
+      }
+}
+@media  screen and (max-width: 1035px) {
+    .nav-bar{
+        display: none;
+    }
+
+    .show-nav-on-mobile{
+        display: flex;
+    }
+}
