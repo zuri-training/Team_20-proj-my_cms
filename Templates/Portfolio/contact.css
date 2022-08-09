@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
     margin: 0;
@@ -25,7 +26,7 @@ a {
 li {
     list-style: none;
     color: rgb(153,214,255);
-    font-family: 'Inder';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -90,7 +91,7 @@ header{
 
 h1 {
     color: var(--used-cl);
-    font-family: 'Inder';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -129,7 +130,7 @@ margin-bottom: 4rem;
 }
 
 .form-heading {
-    font-family: 'Inder';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -140,7 +141,7 @@ margin-bottom: 4rem;
 }
 
 form {
-    font-family: 'Inder';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -190,7 +191,7 @@ textarea {
 .form-btn {
     display: inline-block;
     border: none;
-    font-family: 'Inder';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -221,4 +222,15 @@ footer{
    display: flex;
    flex-direction: column;
    gap: 1.5rem;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+/* or 150% */
+
+    letter-spacing: -0.011em;
 }
