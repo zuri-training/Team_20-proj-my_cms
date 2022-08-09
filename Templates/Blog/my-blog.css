@@ -125,7 +125,7 @@ footer a {
   border: none;
   margin-bottom: 18px;
   background: transparent;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.158) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.158);
 }
 .footer-input:focus {
   outline: 1px solid rgba(0, 0, 0, 0.158);
