@@ -623,6 +623,28 @@ footer {
   .footer {
     flex-direction: column;
   }
+  /* flex container for templates container */
+  .templates-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem;
+    width: fit-content;
+  }
+
+  /* flex container for blog templates */
+  .blog_containers {
+    flex-direction: column;
+  }
+
+  .portfolio_containers {
+    flex-direction: column;
+  }
+
+  .ecommerce_containers {
+    flex-direction: column;
+  }
 }
 
 /* media query for mobile */
@@ -694,26 +716,14 @@ footer {
 
   /* flex container for blog templates */
   .blog_containers {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
   }
 
   .portfolio_containers {
-    display: none;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
   }
 
   .ecommerce_containers {
-    display: none;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
   }
 }

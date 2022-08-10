@@ -1,3 +1,6 @@
+/**
+ * It's a function that hides the blog container and shows the ecom container on click.
+ */
 const colorSwitch = document.getElementById('input-color-switch');
 
 colorSwitch.addEventListener('click', checkMode);
@@ -92,21 +95,54 @@ const goToecom = () => {
   });
 }
 
-// hide templates container on click 
+// hide templates container on click
 // const hideb = () => {
 //   const hide = document.getElementById("templates-container");
 //   hide.addEventListener("click", () => {
 //     hide.style.display = "none";
 //   });
 // }
-const hide = document.getElementById("ecoms");
-const blog = document.getElementById("blog-containers");
-const ecom = document.getElementById("ecom-containers");
-// hide blog container and show ecom container on click
-function showecom(){
-  hide.addEventListener("click", () => {
-    console.log("clicked")
-    blog.style.display = "none";
-    ecom.style.display = "flex";
-  });
+
+// declaring variables for the templates containers
+const ecoms_show = document.getElementById("ecoms");
+const blog_show = document.getElementById("blogs");
+const portfolio_show = document.getElementById("portfolios");
+const blog = document.getElementById("blog_containers");
+const ecom = document.getElementById("ecom_containers");
+const port = document.getElementById("portfolio_containers");
+
+
+// hide blog, portfolio container and show ecom container on click
+function ecomms() {
+    ecoms_show.addEventListener("click", () => {
+        console.log("clicked")
+        blog.style.display = "none";
+        port.style.display = "none";
+        ecom.style.display = "flex";
+    });
 }
+
+ecomms();
+
+// hide ecom, portfolio container and show blog container on click
+function blogs() {
+    blog_show.addEventListener("click", () => {
+        console.log("clicked")
+        ecom.style.display = "none";
+        port.style.display = "none";
+        blog.style.display = "flex";
+    });
+}
+blogs();
+
+// hide blog, ecom container and show portfolio container on click
+function portfolios() {
+    portfolio_show.addEventListener("click", () => {
+        console.log("clicked")
+        ecom.style.display = "none";
+        port.style.display = "flex";
+        blog.style.display = "none";
+    });
+}
+portfolios();
+// hide blog container and show ecom container on click
