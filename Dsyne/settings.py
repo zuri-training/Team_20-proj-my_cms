@@ -95,7 +95,7 @@ ROOT_URLCONF = "Dsyne.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR /"templates_account"],
+        "DIRS": [BASE_DIR / "templates_account"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -103,7 +103,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                
+
                 # django_cms templates context processors
                 "cms.context_processors.cms_settings",
                 "django.template.context_processors.i18n",
@@ -115,9 +115,10 @@ TEMPLATES = [
 
 # templates config for django_cms
 CMS_TEMPLATES = [
-    ("landing-page.html", "Home page template"
-    
-    ),
+    ("landing-page.html", "Home page template"),
+    ("template.html", "templates page"),
+    ("contact-us.html", "contact page"),
+    ("support.html", "support page"),
 ]
 
 WSGI_APPLICATION = "Dsyne.wsgi.application"
