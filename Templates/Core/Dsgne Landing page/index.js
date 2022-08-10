@@ -91,3 +91,22 @@ const goToecom = () => {
         });
   });
 }
+
+// hide templates container on click 
+// const hideb = () => {
+//   const hide = document.getElementById("templates-container");
+//   hide.addEventListener("click", () => {
+//     hide.style.display = "none";
+//   });
+// }
+const hide = document.getElementById("ecoms");
+const blog = document.getElementById("blog-containers");
+const ecom = document.getElementById("ecom-containers");
+// hide blog container and show ecom container on click
+function showecom(){
+  hide.addEventListener("click", () => {
+    console.log("clicked")
+    blog.style.display = "none";
+    ecom.style.display = "flex";
+  });
+}
