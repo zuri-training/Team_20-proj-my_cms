@@ -1,0 +1,639 @@
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
+body{
+    background: #fff!important;
+    font-size: 18px;
+}
+
+
+.container{
+    font-family: 'Inder', sans-serif;
+    font-size: 18px;
+
+}
+a{
+    color: #000 !important;
+    text-decoration: none !important;
+}
+a, p{
+    font-size: 18px !important;
+    font-family: 'Inder', sans-serif !important;
+}
+/* img{
+    width: 100%;
+} */
+
+select{
+    margin-bottom: 120px !important;
+    padding: 3px;
+    width: 85%;
+    border: none;
+    border-top:1px solid #000 ;
+    border-bottom:1px solid #000 ;
+    background-color: transparent;
+    font-size: 12px !important;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 42px !important;
+    margin-left: 37px;
+    margin-bottom: 21px !important;
+    color: #47A39C;
+    font-weight: 400 !important;
+    font-family: 'Candara' !important;
+}
+
+li{
+    list-style:circle;
+    font-size: 13px !important;
+}
+
+.page-padding{
+    padding: 0px 2.3rem !important;
+}
+
+/* NAVBAR STYLING */
+
+/* light mode navbar styling */
+
+.nav-bar li{
+    list-style: none !important;
+}
+a.navbar-brand img{
+    width: 90px;
+    height: 90px;
+}
+
+.nav-bg{
+    background: #fff;
+}
+
+/* dark mode navbar styling */
+
+.dark-mode {
+    background-color: rgba(31, 34, 45, 1) !important;
+    color: white !important;
+}
+
+.dark-mode a{
+    color: white !important;
+}
+
+.dark-mode ::placeholder{
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.dark-mode header.nav-container{
+    background-color: rgba(31, 34, 45, 1) !important;
+}
+
+.dark-mode .nav-bar{
+    background-color: rgba(31, 34, 45, 1);
+}
+
+/* .dark-mode ::placeholder :hover {
+    display: block !important;
+    color: #fff !important;
+  } */
+
+
+
+
+/* Body styling */
+
+
+
+.second-header .header-content-left img.header-icon{
+    position: relative;
+    top: 20px;
+    right: 25px;
+}
+
+.second-header .header-content-left img.header-icon-1{
+    position: relative;
+    top: 13px;
+    left: 5px;
+}
+
+.second-header p.header-text{
+    font-size: 48px !important;
+    font-weight: 700;
+    color: #47A39C;
+}
+
+.second-header .header-content-right input:hover{
+    background: #fff !important;
+}
+
+::placeholder {
+    color: #fff !important;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+::placeholder :hover {
+    display: block !important;
+    color: #000 !important;
+  }
+
+
+.wrapper .sidebar{
+    background: transparent !important;
+    left: 50;
+    width: 255px;
+    height: 101.5%;
+    padding: 30px 0;
+    margin-top: -10px;
+    transition: all 0.5s ease;
+    display: inline-block !important;
+    border-right: 1px solid #41464b;
+    border-top: 1px solid #41464b;
+
+
+}
+
+.wrapper .sidebar ul li{
+    list-style: none;
+}
+
+
+
+.dark-mode select{
+    color: #47A39C !important;
+    border-top: 1px solid #47A39C !important;
+    border-bottom: 1px solid #47A39C !important;
+}
+
+option{
+    background-color: transparent !important;
+}
+
+.main-page{
+    margin-left: 50px;
+    margin-top: 43px;
+    flex: 1 !important;
+    /* margin-bottom: 30px; */
+    border-bottom: 2px solid #41464b;
+    padding-bottom: 30px;
+}
+
+.main-page p{
+    font-size: 13px !important;
+    line-height: 16px;
+}
+
+.main-page a{
+    font-size: 13px !important;
+    text-decoration: underline !important;
+   
+}
+
+
+
+
+
+
+/* FOOTER STYLING */
+.footer{
+    background: #1F4744;
+}
+.footer-content{
+   
+    /* display: block !important; */
+    margin: auto !important;
+    background: #1F4744;
+
+}
+
+p.support, p.product, p.company{
+    font-family: 'Candara' !important;
+    font-size: 38px !important;
+    font-weight: 400 !important;
+    color: #fff;
+}
+
+p.logo-text{
+    color: #fff;
+}
+ 
+.footer-end p.logo-text a span.iconify {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+    color: white;
+}
+ 
+.footer-end img{
+    max-width: 100%;
+    max-height: 100%;
+    height: 129px;
+    width: 156px;
+    vertical-align: bottom;
+    position: relative;
+    bottom: 30px;
+    left: -7px;
+
+}
+
+.footer-end .logo-text{
+    padding: 0%;
+    margin-top: 0%;
+    border: 0;
+    position: relative;
+    top: -16%;
+}
+
+p.footer-link a{
+    color: white !important;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+ 
+#dsyne {
+    padding: 0%;
+    margin-top: 0%;
+    border: 0;
+    position: relative;
+}
+
+@media screen and (max-width:990px){ 
+    .dark-mode button.navbar-dark{
+        display: block !important;
+    }
+
+    ul{
+        padding-left: 0rem !important;
+    }
+    .logo{
+        width: 10rem !important;
+        height: 10rem !important;
+        position: relative;
+        left: -16px !important;
+        bottom: 9px !important;
+    }
+    .second-header{
+        flex-direction:column;
+    }
+
+    .showcase-text{
+        text-align: center;
+    }
+
+    h1{
+        margin-left: 0px !important;
+    }
+
+    select{
+        width: 55% !important;
+    }
+
+    .sidebar{
+        border: none !important;
+    }
+
+    .main-page{
+        margin-left: -94px;
+    }
+    .bottom-text p.final-text{
+        text-align:start !important;
+    }
+
+    .bottom-text p.final-text-2{
+        text-align: center !important;
+    }
+
+    .footer-end{
+        display: grid;
+        place-items: center;
+    }
+
+    .footer-end img{
+        position: relative;
+        top: -4px;
+        bottom: 27px;
+        left: -92px;
+    }
+
+    .footer-content .row p{
+        text-align: center;
+    }
+
+    .second-header .header-content-left img.header-icon {
+        position: relative;
+        top: -13px;
+        right: 3px;
+    }
+
+    .second-header .header-content-left img.header-icon-1 {
+        position: relative;
+        top: 16px;
+        left: -7px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/* main-navbar styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+/* resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+  margin: 0;
+}
+html {
+    font-size: 62.5% !important;
+  }
+a {
+    text-decoration: none ;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  :root{
+    --clr-content:  rgba(31, 71, 68, 1);
+    --Pastel-Turquoise:  rgba(31, 71, 68, 1);
+    --light-Pastel-Turquoise: rgba(5, 130, 142, 1); 
+    --lighter-pastel-Turquoise: rgba(41, 205, 201, 1);
+    --lightest-pastel-Turquoise: rgba(71, 163, 156, 1);
+    --toggle-lightmode:rgba(102, 252, 241, 1);
+    --toggle-btn: rgba(42, 45, 60, 1);
+    --white:rgba(255, 255, 255, 1);
+    --bg-gray: #F3F3F3;
+  }
+/* dark theme/light theme toggle */
+.dark-mode{
+    --clr-content:  rgba(255, 255, 255, 1);
+    --hero-section-paragraph: rgba(255, 255, 255, 1);
+    --bg-gray: rgba(31, 34, 45, 1);
+    --toggle-lightmode:rgba(198, 197, 201, 1);
+}
+  /* STYLING OF THE NAV */
+
+  header{
+    max-width: 134rem;
+    margin: 0 auto;
+  }
+
+  header.nav-container{
+    background: #fff !important;
+  }
+  .logo{
+    width: 10rem !important;
+    height: 10rem !important;
+    position: relative;
+    left: 33px;
+    bottom: 3px;
+  }
+  .nav-container .logo-container{
+    position: relative !important;
+
+  }
+  .nav-container img.top-image{
+    position:  absolute !important;
+    opacity: 0 !important;
+  }
+  .top-image:hover{
+    opacity: 1 !important;
+  }
+  .nav-container{
+    padding-inline: 3rem ;
+  }
+  .nav-bar{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 6px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .nav-bar,
+  .nav-items,
+  .nav-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-links{
+    color: var(--clr-content);
+    font-size: 1.8rem;
+    font-family: 'Inder', sans-serif;
+/* font-style: normal;
+font-weight: 400;
+font-size: 20px !important;
+line-height: 30px; */
+}
+.nav-links:hover{
+    color: var(--lighter-pastel-Turquoise) !important;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    font-family: inder;
+}
+#drop-down{
+    color: var(--clr-content);
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+}
+#drop-btn{
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+.login-btn{
+    background-color: #47A39C;
+    padding: 1rem 4rem;
+    border-radius: 12px;
+    color: var(--white);
+    font-size: -29.5rem;
+    border: none;
+}
+.login-btn:hover{
+    background-color: var(--light-Pastel-Turquoise);
+    color: var(--black);
+}
+.login-btn:active{
+    background-color: var(--lighter-pastel-Turquoise);
+}
+.signup-btn{
+    background-color: var(--white);
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: -0.5rem;
+    border-radius: 7px;
+    border: 1px solid var(--Pastel-Turquoise);
+}
+.signup-btn:hover{
+    color: var(--lighter-pastel-Turquoise);
+}
+.signup-btn:active{
+    color: var(--lightest-pastel-Turquoise);
+}
+.color-switch{
+    padding: 0 1rem;
+    height: 3.2rem;
+    width: 6.4rem;
+    border-radius: 2rem;
+    background-color: var(--toggle-lightmode);
+    display: inline-block;
+    position: relative;
+}
+.color-switch-toggle{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    background-color: var(--toggle-btn);
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+#input-color-switch{
+    display: none;
+}
+#input-color-switch:checked ~ label .color-switch-toggle{
+    transform: translateX(3em);
+}
+#menu,
+.menu{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1.8rem;
+    margin-top: 1rem;
+    color: var(--Pastel-Turquoise);
+}
+#menu.show{
+    display: block;
+}
+.show{
+    display: none;
+}
+.nav-bar ul li{
+    position: relative;
+}
+.drop-menu{
+    position: absolute;
+    left: 8rem;
+    top: 5rem;
+    background-color: var(--white);
+    padding: 1rem;
+    width: 16rem;
+    padding-right: 0;
+    border-radius: 10px;
+    
+}
+.drop-down-options{
+    color: var(--light-pastel-Turquoise);
+    font-size: 1.5rem;
+    font-family: inder;
+}
+#drop-menu{
+    display: none;
+}
+.drop-down-options:hover,
+#drop-down:hover{
+    color: var(--lighter-pastel-Turquoise);
+}
+.drop-menu ul li{
+    margin: 1rem;
+}
+.drop-menu{
+    font-size:1.5rem;
+    color: var(--Pastel-Turquoise);
+    font-family: inder;
+}
+.hidden-for-mobile{
+    display: none;
+}
+
+/* MEDIA QUERIES FOR the NAV */
+@media screen and (min-width:1036px){
+    header{
+        padding: 0 4rem;
+        padding-top: 3rem;
+        background: var(--bg-gray);
+    }
+    .hidden-for-desktop{
+        display: none;
+    }
+    .logo{
+        width: 10rem;
+        height: 10rem;
+      }
+    .nav-bar,
+    .nav-items,
+    .nav-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-container{
+        padding-inline: 4rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      .nav-bar{
+       gap: 4rem;
+      }
+      .nav-items{
+        gap: 4rem;
+      }
+      .hidden-for-mobile{
+        display: block;
+    }
+
+
+
+    }
+      @media screen and (min-width:1300px){
+        /* .nav-container{
+            padding-inline: 12rem;
+      } */
+      .nav-bar{
+        gap: 7rem;
+       }
+      .nav-items,
+      .nav-container{
+        gap: 6rem;
+      }
+}
+@media  screen and (max-width: 1035px) {
+    .nav-bar{
+        display: none;
+    }
+
+    .show-nav-on-mobile{
+        display: flex;
+    }
+
+
+}
