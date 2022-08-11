@@ -1,13 +1,13 @@
-const ecom_show = document.getElementById("ecoms");
-const blogs_show = document.getElementById("blogs");
-const portfolios_show = document.getElementById("portfolios");
+const ecoms_show = document.getElementById("ecoms");
+const blog_show = document.getElementById("blogs");
+const portfolio_show = document.getElementById("portfolios");
 const blog = document.getElementById("blog_containers");
 const ecom = document.getElementById("ecom_containers");
 const port = document.getElementById("portfolio_containers");
 // hide blog container and show ecom container on click
 // console.log("clicked")
 function ecomms() {
-    ecom_show.addEventListener("click", () => {
+    ecoms_show.addEventListener("click", () => {
         console.log("clicked")
         blog.style.display = "none";
         port.style.display = "none";
@@ -17,7 +17,7 @@ function ecomms() {
 
 ecomms();
 function blogs() {
-    blogs_show.addEventListener("click", () => {
+    blog_show.addEventListener("click", () => {
         console.log("clicked")
         ecom.style.display = "none";
         port.style.display = "none";
@@ -26,11 +26,11 @@ function blogs() {
 }
 blogs();
 function portfolios() {
-    portfolios_show.addEventListener("click", () => {
+    portfolio_show.addEventListener("click", () => {
         console.log("clicked")
         ecom.style.display = "none";
-        port.style.display = "none";
-        blog.style.display = "flex";
+        port.style.display = "flex";
+        blog.style.display = "none";
     });
 }
 portfolios();
@@ -45,7 +45,7 @@ function clickEcom (){
         ecom.style.display = "flex";
     });
 }
-clickEcom();
+clickEcom ();
 const clickblogDropdown = document.getElementById("drop-blog")
 function clickBlog (){
     clickblogDropdown.addEventListener("click", () => {
