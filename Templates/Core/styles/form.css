@@ -3,15 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 @font-face {
     font-family: 'Candara';
-    src: url('Candara.woff2') format('woff2'),
-        url('Candara.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    src: url(../assets/Candara\ Font.ttf);
     font-display: swap;
 }
 
 body *{
     font-family: 'Work Sans', sans-serif;
+}
+h1{
+    font-family: 'Candara';
 }
 body{
     background: url(../assets/Frame\ 1.png);
@@ -31,6 +31,7 @@ body{
     position: relative;
     background: transparent;
 }
+
 
 /* NAVBAR */
 /* resets */
@@ -66,8 +67,7 @@ list-style: none;
     --bg-gray: rgba(31, 34, 45, 1);
     --bg-color: #1F4774;
     --bg-color-2: #000000;
-    --container-bg: #1F4744;
-    --container-bg-2: #15171E;
+    --container-bg: #15171E;
     --text-color: #FFFFFF;
     --toggle-lightmode:#C6C5C9;
 }
@@ -195,10 +195,10 @@ border-radius: 6px;
 .drop-menu{
     position: absolute;
     left: 70px;
-    top: 30px;
+    top: 20px;
     background-color: var(--white);
-    padding: 20px;
-    width: 180px;
+    padding: 5px;
+    width: 160px;
     padding-right: 0;
     border-radius: 10px;
     font-size: 15px;
@@ -218,7 +218,7 @@ border-radius: 6px;
     color: var(--lighter-pastel-Turquoise);
 }
 .drop-menu ul li{
-    margin: 10px;
+    margin: 4px;
 }
 #drop-list{
     padding: 0;
@@ -244,8 +244,9 @@ border-radius: 6px;
         align-items: center;
         position: relative;
         background: transparent;
-        height: 80px;
+        height: 70px;
         width: 80%;
+        margin-bottom: 25px;
     }
     .nav-bar, .nav-items, .nav-buttons{
         display: flex;
@@ -303,7 +304,7 @@ span{
 .container-form{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background: var(--container-bg);
     width: 900px;
@@ -312,6 +313,7 @@ span{
 .container-form h1{
     font-size: 50px;
     font-weight: 200;
+    margin: 10px;
 }
 .container-form h1, .container-form p, .container-form label{
     color: var(--text-color);
@@ -325,9 +327,6 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-#login .container-form{
-    background: var(--container-bg-2);
 }
 /* form styles */
 
@@ -396,7 +395,7 @@ div label{
 }
 .login input[type=button]:hover, .register input[type=button]:hover{
     color: rgb(60, 213, 255);
-    box-shadow: 0px 0px 27px -1px rgba(31,34,45,0.75)
+    box-shadow: 0px 0px 7px -1px rgba(31,34,45,0.75)
 }
 .login #facebook, .register #facebook{
     background-position: 33px 8px;
@@ -430,9 +429,6 @@ div label{
 
 
 /* Password Retrieval */
-#forgotten-password .container-form{
-    background: var(--container-bg-2);
-}
 #forgotten-password h1, #forgotten p{
     font-family: 'Inder';
 }

@@ -263,8 +263,7 @@ article h2 {
   color: var(--black);
   padding: 1.5rem 3rem;
   box-shadow: 0px 2px 67px -15px rgba(8, 11, 17, 0.75);
-  -webkit-box-shadow: 0px 2px 67px -15px rgba(8, 11, 17, 0.75);
-  -moz-box-shadow: 0px 2px 67px -15px rgba(8, 11, 17, 0.75);
+ 
 }
 .sectionTwo-CTA:hover {
   color: var(--lighter-pastel-Turquoise);
@@ -290,21 +289,11 @@ article h2 {
   padding: 6rem;
   background-color: var(--bg-gray);
 }
-.third-section-content {
-  justify-content: space-between;
-  border: 1px solid var(--white);
-  flex-direction: column;
-  padding: 3rem;
-  max-width: 133rem;
-  margin: 0 auto;
-}
 .third-section-inner-content h3 {
   color: var(--second-section-content);
   font-size: 2.5rem;
-}
-.third-section-inner-content {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 .third-section-inner-content p,
 .fourth-section p {
@@ -313,18 +302,14 @@ article h2 {
   text-align: center;
 }
 .third-section-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.third-section-inner-content {
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
-  justify-content: center;
-}
-#h3 {
-  /* width: 30.5rem; */
-  text-align: center;
-  font-size: 2.4rem;
+  max-width: 133rem;
+  margin: 0 auto;
+  border: 1px solid var(--white);
+  padding: 4rem 2rem;
 }
 .ttyl {
   gap: 0;
@@ -354,7 +339,7 @@ article h2 {
 .fifth-section p {
   color: var(--second-section-content);
   font-size: 1.8rem;
-  width: 50rem;
+  max-width: 50rem;
   text-align: center;
   margin: 3rem auto;
 }
@@ -417,8 +402,6 @@ article h2 {
   margin-top: 4rem;
   border-radius: 6px;
   box-shadow: 0px 4px 15px 0px rgba(8, 11, 17, 0.75);
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(8, 11, 17, 0.75);
-  -moz-box-shadow: 0px 4px 15px 0px rgba(8, 11, 17, 0.75);
 }
 .scrollbar {
   height: 40rem;
@@ -452,6 +435,9 @@ article h2 {
   justify-content: center;
   align-items: center;
 }
+.unavailable-templates{
+    opacity: 0.3;
+}
 /* SIXTH SECtion */
 .sixth-section {
   padding: 5rem 0;
@@ -470,7 +456,7 @@ article h2 {
 }
 .sixth-section a {
   display: inline-block;
-  width: 40rem;
+  /* width: 40rem; */
   text-align: center;
 }
 footer {
@@ -518,7 +504,7 @@ footer {
   align-items: flex-start;
 }
 .footer-logo {
-  height: 5rem;
+  height: 3rem;
 }
 
 /* images in a flex box */
@@ -578,7 +564,16 @@ footer {
   align-items: center;
   gap: 1rem;
 }
-
+.new-img{
+    height: 39.5rem;
+    margin-bottom: 1rem;
+}
+.show{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
 @media screen and (max-width: 1035px) {
   .hero-section {
     flex-direction: column;
@@ -623,6 +618,18 @@ footer {
   .footer {
     flex-direction: column;
   }
+  .footer-list h4,
+  .Footer-links,
+  .Footer-links {
+    text-align: center;   
+}
+.last-footer-list {
+    align-items: center;
+  }
+  .footer-list:last-child{
+width: auto;
+text-align: center;
+  }
   /* flex container for templates container */
   .templates-container {
     display: flex;
@@ -649,6 +656,12 @@ footer {
 
 /* media query for mobile */
 @media screen and (max-width: 767px) {
+    .container{
+        padding-inline: 3rem;
+    }
+    .hero-section h1{
+        font-size: 3rem;
+    }
   .hero-section {
     flex-direction: column;
     justify-content: center;
@@ -663,8 +676,8 @@ footer {
     text-align: center;
     width: auto;
   }
-  .hero-content p {
-    font-size: 2rem;
+  .hero-content p1{
+    font-size: 1.6rem;
   }
   .hero-section-btn {
     width: 20rem;
@@ -673,18 +686,36 @@ footer {
   }
   .hero-section img {
     width: 80%;
+    height: auto;
     margin-top: 2rem;
   }
   .benefits-pair {
     flex-direction: column;
   }
+  .benefits-and-features h2{
+    font-size: 2.5rem;
+  }
   .second-section-content {
     text-align: center;
-    font-size: 2rem;
-    margin: 0 auto;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+  }
+  article img {
+    width: 80%;
+  }
+  .third-section-container{
+    flex-direction: column;
+    gap: 5rem;
   }
   .fourth-section {
     flex-direction: column;
+  }
+  .fourth-section h4 {
+    font-size: 3rem;
+  }
+  .fourth-section img{
+    width: 40rem;
+    height: 40rem;
   }
   .sixth-section p {
     font-size: 1.7rem;

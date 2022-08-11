@@ -27,7 +27,6 @@ def signin(request):
         return render(request, 'login.html')
 
 
-
 def register_view(request):
     context = {}
     if request.POST:
@@ -59,4 +58,8 @@ def home(request):
 #     form_class = UserCreationForm
 #     success_url = reverse_lazy("login")
 #     template_name = "register.html"
+=======
+def templates(request):
+    return render(request, 'template.html')
+
 
