@@ -2,6 +2,7 @@
  * It's a function that hides the blog container and shows the ecom container on click.
  */
 const colorSwitch = document.getElementById('input-color-switch');
+let imageOne = document.querySelector("#one-image");
 
 colorSwitch.addEventListener('click', checkMode);
 
@@ -9,8 +10,10 @@ function checkMode() {
     console.log('checking')
     if(colorSwitch.checked){
         darkModeOn()
+        imageOne.src = "./images/dsyne features-DM.png"
     }else{
-        darkModeOff()
+        darkModeOff();
+        imageOne.src = "./images/dsyne features 1.png"
     }
 }
 
@@ -22,23 +25,12 @@ function darkModeOff(){
 }
 
 // switching Up images with dark and light mode
-  let darkmode = darkModeOn();
-  let imageOne = document.getElementById("settings");
-  if (darkmode) {
-    imageOne.src = "./images/setting-DM.png"
-  }else{
-    console.log("no possible");
-  }
-// let imageOne = document.getElementById("settings");
-// let img = true;
-// function images(){
-// img ? imageOne.src = "./setting-DM.png": console.log("no possible");
-// }
-// colorSwitch.addEventListener("click", () => {
-//   img = !img;
-//   images();
-// })
-// swiping article
+  
+  // if (colorSwitch.checked) {
+  //   console.log("go girl go")
+  // }else{
+  //   imageOne.src = "./images/dsyne features-DM.png"
+  // }
 let imageSources = [
   "./images/articleOne.png",
   "./images/articleTwo.png",
