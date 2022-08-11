@@ -238,7 +238,9 @@ JAZZMIN_SETTINGS = {
     "site_icon": None,
 
     # Welcome text on the login screen
-    "welcome_sign": "Welcome to the Dsyne CMS"
+    "welcome_sign": "Welcome to the Dsyne CMS" 
+    
+    
     
     
 }
