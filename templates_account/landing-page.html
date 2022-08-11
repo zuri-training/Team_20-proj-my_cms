@@ -16,8 +16,8 @@
     />
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="static/css_core/navbar.css">
-    <link rel="stylesheet" href="static/css_core/landing-page.css">
+    <link rel="stylesheet" href="{% static 'css_core/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css_core/landing-page.css' %}">
     {% render_block "css" %}
 </head>
 <body>
@@ -25,24 +25,24 @@
     <section class="first-section">
         <header class="nav-container">
             <a href="index.html" class="logo-container">
-              <img src="static/images/clr-logo.svg" alt="logo" class="logo top-image">
-              <img src="static/images/logo.svg" alt="logo" class="logo">
+              <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
+              <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
             </a>
             <nav class="nav-bar" id="nav-links">
               <ul class="nav-items">
-                <li><a class="nav-links hidden-for-mobile" href=" templates/ ">Templates</a></li>
+                <li><a class="nav-links hidden-for-mobile" href="{% url 'templates' %}">Templates</a></li>
                 <li id="select-field" class="hidden-for-mobile">
-                  <a class="nav-links" id="drop-btn" href="#/">Build website <span id="drop-down" data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
+                  <a class="nav-links" id="drop-btn" href="{% url 'templates' %}">Build website <span id="drop-down" data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
                   <div class="drop-menu" id="drop-menu">
                       <p>Choose a template</p>
                       <ul id="drop-list">
-                          <li><a class="drop-down-options"href="blog/">Blog</a></li>
+                          <li><a class="drop-down-options"href="{% url 'blog' %}">Blog</a></li>
                           <!-- <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li> -->
                           <li><a class="drop-down-options"href="{% url 'portfolio' %}">Portfolio</a></li>
                       </ul>
                     </div>
                 </li>
-                <li><a class="nav-links" href="contact-us/">Contact us</a></li>
+                <li><a class="nav-links" href="{% url 'contact-us' %}">Contact us</a></li>
               </ul>
               <!-- toggle button for switchind theme goes here -->
               <div class="wrapper-color-switch">
@@ -53,8 +53,8 @@
               </div>
               <!-- toggle button for switchind theme ends here -->
               <div class="nav-buttons">
-                <a href="signin/"> <button class="login-btn btn primary-btn">Log In</button></a>
-                <a href="register/"><button class="secondary-btn btn signup-btn">Get Started</button></a>
+                <a href="{% url 'signin' %}"> <button class="login-btn btn primary-btn">Log In</button></a>
+                <a href="{% url 'register' %}"><button class="secondary-btn btn signup-btn">Get Started</button></a>
               </div>
             </nav>
             <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu" data-icon="charm:menu-hamburger"></span></a>
@@ -67,9 +67,9 @@
                     <h1>Design easy and unique websites with our Builder
                     </h1>
                     <p>Discover the platform that enables <br> you to independently design, enhance,<br> and expand your web presence.</p>
-                    <a href="Login.html" class="btn secondary-btn hero-section-btn"> Get started</a>
+                    <a href="{% url 'register' %}" class="btn secondary-btn hero-section-btn"> Get started</a>
                 </div>
-                <img src="static/images/Frame 2.png" alt="Hero-image">
+                <img src="{% static 'images/Frame 2.png' %}" alt="Hero-image">
             </div>
         </main>
     </section>
@@ -104,14 +104,14 @@
                         <p>Multi-User Option</p>
                     </div>
                 </div>
-                <div class="sectionTwo-CTA"><a href="build-website.html" class="btn secondary-btn">Create a web page</a></div>
+                <div class="sectionTwo-CTA"><a href="{% url 'templates' %}" class="btn secondary-btn">Create a web page</a></div>
             </div>
             <p class="second-section-content">
                 With robust content management tools, continuous innovation, <br> advanced security, guaranteed uptime, and much more. — Dsyne <br> gives the website you desire in minimal time
             </p>
         <!-- THE animation goes here -->
         <article class="article-content">
-            <img src="static/images/articleOne.png" alt="" id="image">
+            <img src="{% static 'images/articleOne.png' %}" alt="" id="image">
         </article>
         <!-- THE animation goes here -->
         </div>
@@ -155,7 +155,7 @@
     </section>
     <!-- END OF SECTION THREE -->
     <section class="fourth-section flex">
-        <div><img src="static/images/dsyne features 1.png" class="fourth-setion-img" alt=""></div>
+        <div><img src="{% static 'images/dsyne features 1.png' %}" class="fourth-setion-img" alt=""></div>
         <div><h4> One Platform, <br> all the features.</h4></div>
     </section>
     <!-- END OF SECTION THREE -->
@@ -169,15 +169,15 @@
             </p>
             <div class="templates-wrapper">
                 <ul>
-                    <li><a href="#/" class="templates-links" id="blogs" >Blog</a></li>
-                    <li><a href="#/" class="templates-links" id="Ecom">E-commerce</a></li>
-                    <li><a href="#/" class="templates-links" id="portfolios">Portfolio</a></li>
+                    <li><a href="{% url 'blog' %}" class="templates-links" id="blogs" >Blog</a></li>
+                    <!-- <li><a href="#/" class="templates-links" id="Ecom">E-commerce</a></li> -->
+                    <li><a href="{% url 'portfolio' %}" class="templates-links" id="portfolios">Portfolio</a></li>
                 </ul>
                    <!-- THIS IS WHERE THAT SCROLLING EFFECT COMES INTO PLAY -->
 
 
                    <!-- THIS IS WHERE THAT SCROLLING EFFECT COMES INTO PLAY -->
-                <a href="#/" class="btn disabled-btn">View More</a>
+                <a href="{% url 'template' %}" class="btn disabled-btn">View More</a>
             </div>
             
         </div>
@@ -187,32 +187,32 @@
         <p>
             Dsyne is the leading website builder platform for all <br> content creators, irrespective of language barriers <br> and geographical boundaries.
         </p>
-        <a href="Build website.html" class="btn secondary-btn">Create Your next website with Dsyne Today</a>
+        <a href="{% url 'template' %}" class="btn secondary-btn">Create Your next website with Dsyne Today</a>
     </section>
     <footer>
         <div class="footer container">
             <div class="footer-list">
                 <h4>Product</h4>
-                <a class="Footer-links" href="template.html">Template</a>
-                <a class="Footer-links" href="build-website.html">Build website</a>
-                <a class="Footer-links" href="dashboard.html">Dashboard</a>
-                <a class="Footer-links" href="features.html">Features</a>
-                <a class="Footer-links" href="sign-up.html">Sign Up</a>
+                <a class="Footer-links" href="{% url 'templates' %}">Template</a>
+                <!-- <a class="Footer-links" href="build-website.html">Build website</a> -->
+                <a class="Footer-links" href="{% url 'dashboard' %}">Dashboard</a>
+                <!-- <a class="Footer-links" href="features.html">Features</a> -->
+                <a class="Footer-links" href="{% url 'signin' %}">Login</a>
             </div>
             <div class="footer-list">
                 <h4>Company</h4>
-                <a class="Footer-links" href="about.html">About DSYNE</a>
-                <a class="Footer-links" href="contact us.html">Contact Us</a>
+                <a class="Footer-links" href="{% url 'about-us' %}">About DSYNE</a>
+                <a class="Footer-links" href="{% url 'contact-us' %}">Contact Us</a>
             </div>
             <div class="footer-list">
                 <h4>Support</h4>
-                <a class="Footer-links" href="about.html">Support Center</a>
-                <a class="Footer-links" href="login.html">Getting Started</a>
-                <a class="Footer-links" href="faq.html">FAQ</a>
+                <a class="Footer-links" href="{% url 'support' %}">Support Center</a>
+                <a class="Footer-links" href="{% url 'register/' %}">Getting Started</a>
+                <a class="Footer-links" href="{% url 'faq' %}">FAQ</a>
             </div>
             <div class="footer-list last-footer-list">
                 <a href="index.html" class="logo-container">
-                    <img src="static/images/dsyne 2 LOGO 1.png" alt="logo" class="logo footer-logo">
+                    <img src="{% static 'images/dsyne 2 LOGO 1.png' %}" alt="logo" class="logo footer-logo">
                   </a>
                 <p>Dsyne is the leading website builder platform for all content creators, irrespective of language and geographical boundaries.</p>
                 <p>2022 Dsyne.com</p>
@@ -226,7 +226,7 @@
         </div>
     </footer>
     <!-- JAVASCRIPT -->
-    <script src="static/js_core/index.js"></script>
+    <script src="{% static 'js_core/index.js' %}"></script>
     <!-- <script src="navbar.js"></script> -->
     <!-- animation javascript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

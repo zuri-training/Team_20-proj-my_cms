@@ -4,48 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="{% static 'css_core/form.css' %}">
     <title>Signup</title>
 </head>
 <body>
     <header class="nav-container">
-        <div>
-            <a href="index.html" class="logo-container">
-                <img src="./assets/clr-logo.svg" alt="logo" class="logo top-image">
-                <img src="./assets/logo.svg" alt="logo" class="logo">
-            </a>
-            <nav class="nav-bar" id="nav-links">
-              <ul class="nav-items">
-                    <li><a class="nav-links hidden-for-mobile" href="templates.html">Templates</a></li>
-                    <li id="select-field" class="hidden-for-mobile">
-                        <a class="nav-links" id="drop-btn" href="#/">Build Website <span id="drop-down" data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
-                        <div class="drop-menu" id="drop-menu">
-                            <p>Choose a template</p>
-                            <ul id="drop-list">
-                                <li><a class="drop-down-options"href="blog.html">Blog</a></li>
-                                <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li>
-                                <li><a class="drop-down-options"href="Portfolio.html">Portfolio</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a class="nav-links" href="contact us.html">Contact us</a></li>
-              </ul>
-              <!-- toggle button for switchind theme goes here -->
-              <div class="wrapper-color-switch">
+        <a href="index.html" class="logo-container">
+            <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
+            <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
+        </a>
+        <nav class="nav-bar" id="nav-links">
+            <ul class="nav-items">
+                <li><a class="nav-links hidden-for-mobile" href="{% url 'templates' %}">Templates</a></li>
+                <li id="select-field" class="hidden-for-mobile">
+                    <a class="nav-links" id="drop-btn" href="{% url 'templates' %}">Build website <span id="drop-down"
+                            data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
+                    <div class="drop-menu" id="drop-menu">
+                        <p>Choose a template</p>
+                        <ul id="drop-list">
+                            <li><a class="drop-down-options" href="{% url 'blog' %}">Blog</a></li>
+                            <!-- <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li> -->
+                            <li><a class="drop-down-options" href="{% url 'portfolio' %}">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav-links" href="{% url 'contact-us' %}">Contact us</a></li>
+            </ul>
+            <!-- toggle button for switchind theme goes here -->
+            <div class="wrapper-color-switch">
                 <input type="checkbox" id="input-color-switch" />
                 <label for="input-color-switch" class="color-switch">
-                  <div class="color-switch-toggle"></div>
+                    <div class="color-switch-toggle"></div>
                 </label>
-              </div>
-              <!-- toggle button for switchind theme ends here -->
-              <div class="nav-buttons">
-                <button class="login-btn btn primary-btn" href="login.html">Log In</button>
-                <button class="secondary-btn btn signup-btn" href="signup.html">Get Started</button>
-              </div>
-            </nav>
-            <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu" data-icon="charm:menu-hamburger"></span></a>
-        </div>
-    </header>
+            </div>
+            <!-- toggle button for switchind theme ends here -->
+            <div class="nav-buttons">
+                <a href="{% url 'signin' %}"> <button class="login-btn btn primary-btn">Log In</button></a>
+                <a href="{% url 'register' %}"><button class="secondary-btn btn signup-btn">Get Started</button></a>
+            </div>
+        </nav>
+        <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu"
+                data-icon="charm:menu-hamburger"></span></a>
+        {% render_block "js" %}
     
 
     <main>
