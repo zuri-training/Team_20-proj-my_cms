@@ -25,7 +25,7 @@ from account import views
 
 urlpatterns = [
     #Default
-    path('', views.home, name='home'),
+    # path('', views.home, name='home'),
     #Register
     path('register/', views.register_view, name='register'),
     # Portfolio url

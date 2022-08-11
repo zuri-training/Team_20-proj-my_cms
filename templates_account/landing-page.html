@@ -16,8 +16,8 @@
     />
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="static/navbar.css">
-    <link rel="stylesheet" href="static/landing-page.css">
+    <link rel="stylesheet" href="static/css_core/navbar.css">
+    <link rel="stylesheet" href="static/css_core/landing-page.css">
     {% render_block "css" %}
 </head>
 <body>
@@ -53,8 +53,8 @@
               </div>
               <!-- toggle button for switchind theme ends here -->
               <div class="nav-buttons">
-                <button class="login-btn btn primary-btn">Log In</button>
-                <button class="secondary-btn btn signup-btn">Get Started</button>
+                <a href="signin/"> <button class="login-btn btn primary-btn">Log In</button></a>
+                <a href="register/"><button class="secondary-btn btn signup-btn">Get Started</button></a>
               </div>
             </nav>
             <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu" data-icon="charm:menu-hamburger"></span></a>
@@ -208,7 +208,7 @@
                 <h4>Support</h4>
                 <a class="Footer-links" href="about.html">Support Center</a>
                 <a class="Footer-links" href="login.html">Getting Started</a>
-                <a class="Footer-links" href="FAQ.html">FAQ</a>
+                <a class="Footer-links" href="faq.html">FAQ</a>
             </div>
             <div class="footer-list last-footer-list">
                 <a href="index.html" class="logo-container">
@@ -226,7 +226,7 @@
         </div>
     </footer>
     <!-- JAVASCRIPT -->
-    <script src="static/index.js"></script>
+    <script src="static/js_core/index.js"></script>
     <!-- <script src="navbar.js"></script> -->
     <!-- animation javascript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

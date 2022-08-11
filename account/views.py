@@ -49,8 +49,8 @@ def register_view(request):
 
 
  
-def home(request):
-    return render(request,"home1.html")  
+# def home(request):
+#     return render(request,"home1.html")  
 
 
 
@@ -64,5 +64,7 @@ def templates(request):
     
 def contact(request):
     return render(request, 'contact-us.html')
+
+
 
 
