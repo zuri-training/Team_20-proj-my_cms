@@ -27,3 +27,6 @@ def signin(request):
 def templates(request):
     return render(request, 'template.html')
 
+def contact(request):
+    return render(request, 'contact-us.html')
+
