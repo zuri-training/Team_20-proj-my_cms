@@ -21,9 +21,13 @@ from django.urls import re_path, include
 # for media handling
 from django.conf import settings
 from django.conf.urls.static import static
+from account import views
 
 urlpatterns = [
-    
+    #Default
+    path('', views.home, name='home'),
+    #Register
+    path('register/', views.register_view, name='register'),
     # Portfolio url
     path("portfolio/", include("portfolio.urls")),
     # blogPost url
