@@ -33,6 +33,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin",
+    
     # django-admin style for django_cms
     "djangocms_admin_style",
     "django.contrib.admin",
@@ -95,7 +97,7 @@ ROOT_URLCONF = "Dsyne.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR /"templates_account"],
+        "DIRS": [BASE_DIR / "templates_account"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -103,7 +105,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                
+
                 # django_cms templates context processors
                 "cms.context_processors.cms_settings",
                 "django.template.context_processors.i18n",
@@ -115,11 +117,10 @@ TEMPLATES = [
 
 # templates config for django_cms
 CMS_TEMPLATES = [
-    ("landing-page.html", "Home page template"
-     "template.html", "templates page"
-     "contact-us.html", "contact page"
-     "support.html", "support page"
-    ),
+    ("landing-page.html", "Home page template"),
+    ("template.html", "templates page"),
+    ("contact-us.html", "contact page"),
+    ("support.html", "support page"),
 ]
 
 WSGI_APPLICATION = "Dsyne.wsgi.application"
@@ -209,3 +210,42 @@ THUMBNAIL_PROCESSORS = (
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+
+""" This settings is for the django admin customizer """ 
+
+JAZZMIN_SETTINGS = {
+    # title of the window (Will default to current_admin_site.site_title if absent or None)
+    "site_title": "Dsyne Admin",
+
+    # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_header": "Dsyne",
+
+    # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_brand": "Dsyne",
+
+    # Logo to use for your site, must be present in static files, used for brand on top left
+    "site_logo": "../static/images/dsyne 2 LOGO 1.png",
+
+    # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
+    "login_logo": None,
+
+    # Logo to use for login form in dark themes (defaults to login_logo)
+    "login_logo_dark": None,
+
+    # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
+    "site_icon": None,
+
+    # Welcome text on the login screen
+    "welcome_sign": "Welcome to the Dsyne CMS" 
+    
+    
+    
+    
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "flatly",
+    "dark_mode_theme": "darkly",
+}

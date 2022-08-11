@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Portfolio-pry-clr: rgba(219, 237, 247, 1);
+    --dark-clr: rgba(31, 34, 45, 1);
+    --text-clr:rgba(153, 214, 255, 1);
+    --form-btn: rgb(219,237,247);
+    --used-cl:rgb(153,214,255);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    color: rgb(153,214,255);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 32px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 4rem;
+}
+/* NAVBAR SECTION */
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    box-shadow: 0px 0px 37px -11px rgba(31,34,45,0.75);
+}
+.logo-section{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 47px;
+}
+.logo-img-bg{
+    background-color: var(--Portfolio-pry-clr);
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.logo-img-bg p{
+    font-size: 1.5rem;
+}
+.logo-section h1{
+    font-size: 1.5rem;
+    color: var(--text-clr);
+}
+.nav-container{
+    display: flex;
+    gap: 30px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 47px;
+}
+
+.nav-links{
+    color: var(--used-cl);
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1 {
+    color: var(--used-cl);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.011em;
+}
+.top-links {
+    margin-right: 145px;
+}
+
+
+/* .nav-links:hover{
+    color: var(--Portfolio-pry-clr);
+} */
+main{
+    padding-top:6rem;
+    padding-bottom:12rem;
+    border-bottom: 1px solid var(--text-clr);
+
+}
+#user-occupation{
+font-weight: 700;
+font-size: 2.5rem;
+color: var(--text-clr);
+margin-bottom: 4rem;
+}
+#user-occupation-description{
+    font-size: 4rem;
+    width: 65rem;
+}
+
+/* STYLING OF FORM SECTION */
+.form-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: -0.011em;
+    text-align: center;
+    margin-top: 43px;
+}
+
+form {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 30px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin: 43px 0 140px;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 134px;
+}
+
+.form-inputs {
+    padding: 30px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #1F222D;
+}
+
+.form-message-section {
+    margin-top: 59px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-message-section > label {
+    margin-bottom: 59px;
+}
+
+textarea {
+    font-size: 1.2rem;
+    border: 1px solid #1F222D;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.form-btn {
+    display: inline-block;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.011em;
+    width: 195px;
+    height: 86px;
+    margin-left: 40%;
+    border-radius: 20px;
+    background-color: var(--form-btn);
+}
+
+/* STYLING OF THE FOOTER */
+footer{
+    background-color: var(--Portfolio-pry-clr);
+    padding: 2rem 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icon{
+    display: flex;
+    gap: 1rem;
+}
+.call-number{
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+/* or 150% */
+
+    letter-spacing: -0.011em;
+}
