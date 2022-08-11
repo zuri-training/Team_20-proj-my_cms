@@ -12,5 +12,6 @@ CSS File: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templat
 Images:   https://github.com/zuri-training/Team_20-proj-my_cms/tree/main/Templates/Blog/images
 
 2. FAQ Page:
-HTML File: 
-CSS File: 
+HTML File: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/faq.html
+CSS File: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/faq.css
+Images: https://github.com/zuri-training/Team_20-proj-my_cms/tree/main/Templates/Core/faq-images
