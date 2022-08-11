@@ -33,13 +33,13 @@
                   <div class="drop-menu" id="drop-menu">
                       <p>Choose a template</p>
                       <ul id="drop-list">
-                          <li><a class="drop-down-options"href="blog.html">Blog</a></li>
-                          <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li>
-                          <li><a class="drop-down-options"href="Portfolio.html">Portfolio</a></li>
+                          <li><a class="drop-down-options" id="drop-blog" href="#our-blog">Blog</a></li>
+                          <li><a class="drop-down-options"href="#our-blog" id="drop-Ecom">Ecommerce</a></li>
+                          <li ><a class="drop-down-options"href="#our-blog" id="drop-port" >Portfolio</a></li>
                       </ul>
                     </div>
                 </li>
-                <li><a class="nav-links" href="contact us.html">Contact us</a></li>
+                <li><a class="nav-links" href="contact-us.html">Contact us</a></li>
               </ul>
               <!-- toggle button for switchind theme goes here -->
               <div class="wrapper-color-switch">
@@ -63,7 +63,7 @@
                     <h1>Design easy and unique websites with our Builder
                     </h1>
                     <p>Discover the platform that enables <br> you to independently design, enhance,<br> and expand your web presence.</p>
-                    <a href="Login.html" class="btn secondary-btn hero-section-btn"> Get started</a>
+                    <a href="login.html" class="btn secondary-btn hero-section-btn"> Get started</a>
                 </div>
                 <img src="./images/Frame 2.png" alt="Hero-image">
             </div>
@@ -114,9 +114,9 @@
     </section>
     <!-- END OF SECTION TWO -->
     <section class="third-section">
-        <div class="third-section-content flex">
+        <div class="third-section-content">
             <div class="third-section-container">
-                <div class="third-section-inner-content flex">
+                <div class="third-section-inner-content">
                     <h3>Advanced Analytics</h3>
                     <p> 
                         Desyn is a MS automated with the best analytics
@@ -126,7 +126,7 @@
                         your website statistics.
                     </p>
                 </div>
-                <div class="third-section-inner-content flex">
+                <div class="third-section-inner-content ">
                     <h3>Professional Control </h3>
                     <p>
                         Be professional with Desyne. Utilize our team 
@@ -136,8 +136,8 @@
                         are here to give your business the best there is.
                     </p>
                 </div>
-                <div class="third-section-inner-content flex ">
-                    <h3 id="h3">Omni-Channel & Omni-Lingual Support</h3>
+                <div class="third-section-inner-content  ">
+                    <h3 i">Omni-Channel & Omni-Lingual Support</h3>
                     <p> 
                         We support local brands and want 
                         the best  for them. That’s why we offer
@@ -151,13 +151,13 @@
     </section>
     <!-- END OF SECTION THREE -->
     <section class="fourth-section flex">
-        <div><img src="./images/dsyne features 1.png" class="fourth-setion-img" alt=""></div>
+        <div><img src="./images/dsyne features 1.png" class="fourth-setion-img" id="one-image" alt=""></div>
         <div><h4> One Platform, <br> all the features.</h4></div>
     </section>
     <!-- END OF SECTION THREE -->
     <section class="">
         <section class="">
-      <div class="fifth-section container">
+      <div class="fifth-section container" id="our-blog">
         <h4>Templates Tailored To Meet Your Web Needs</h4>
         <p>
           You’re making a website. Let’s help you make it pop. Dsyne offers you
@@ -195,30 +195,36 @@
           <!-- THIS IS WHERE THAT SCROLLING EFFECT COMES INTO PLAY -->
           <div class="templates-container">
             <div class="blog_containers" id="blog_containers">
+                <div class="blog2">
+                    <img class="scrollimg new-img" src="./images/blog-image.png" alt="" />
+                  </div>
               <div class="blog2">
-                <img class="scrollimg" src="./images/blog2.png" alt="" />
+                <img class="scrollimg unavailable-templates" src="./images/blog2.png" alt="" />
               </div>
               <div class="blog2">
-                <img class="scrollimg" src="./images/blog3.png" alt="" />
+                <img class="scrollimg unavailable-templates" src="./images/blog3.png" alt="" />
               </div>
             </div>
             <div class="ecommerce_containers" id="ecom_containers">
               <div class="blog2">
-                <img class="scrollimg" src="images/ecom.png" alt="" />
+                <img class="scrollimg new-img" src="images/ecom-template.png" alt="" />
               </div>
               <div class="blog2">
-                <img class="scrollimg" src="images/ecom2.png" alt="" />
+                <img class="scrollimg unavailable-templates" src="images/ecom2.png" alt="" />
               </div>
               <div class="blog2">
-                <img class="scrollimg" src="images/ecom3.png" alt="" />
+                <img class="scrollimg unavailable-templates" src="images/ecom3.png" alt="" />
               </div>
             </div>
             <div class="portfolio_containers" id="portfolio_containers">
+                <div class="blog2">
+                    <img class="scrollimg  new-img" src="images/Portfolio-template.png" alt="" />
+                  </div>
               <div class="blog2">
-                <img class="scrollimg" src="images/portfolio.png" alt="" />
+                <img class="scrollimg unavailable-templates" src="images/portfolio.png" alt="" />
               </div>
               <div class="blog2">
-                <img class="scrollimg" src="images/portfolio3.png" alt="" />
+                <img class="scrollimg unavailable-templates" src="images/portfolio3.png" alt="" />
               </div>
             </div>
           </div>
@@ -234,14 +240,14 @@
         <p>
             Dsyne is the leading website builder platform for all <br> content creators, irrespective of language barriers <br> and geographical boundaries.
         </p>
-        <a href="Build website.html" class="btn secondary-btn">Create Your next website with Dsyne Today</a>
+        <a href="template.html" class="btn secondary-btn">Create Your next website with Dsyne Today</a>
     </section>
     <footer>
         <div class="footer container">
             <div class="footer-list">
                 <h4>Product</h4>
                 <a class="Footer-links" href="template.html">Template</a>
-                <a class="Footer-links" href="build-website.html">Build website</a>
+                <a class="Footer-links" href="template.html">Build website</a>
                 <a class="Footer-links" href="dashboard.html">Dashboard</a>
                 <a class="Footer-links" href="features.html">Features</a>
                 <a class="Footer-links" href="sign-up.html">Sign Up</a>
@@ -249,11 +255,11 @@
             <div class="footer-list">
                 <h4>Company</h4>
                 <a class="Footer-links" href="about.html">About DSYNE</a>
-                <a class="Footer-links" href="contact us.html">Contact Us</a>
+                <a class="Footer-links" href="contact-us.html">Contact Us</a>
             </div>
             <div class="footer-list">
                 <h4>Support</h4>
-                <a class="Footer-links" href="about.html">Support Center</a>
+                <a class="Footer-links" href="support.html">Support Center</a>
                 <a class="Footer-links" href="login.html">Getting Started</a>
                 <a class="Footer-links" href="FAQ.html">FAQ</a>
             </div>
@@ -274,6 +280,7 @@
     </footer>
     <!-- JAVASCRIPT -->
     <script src="index.js"></script>
+    <script src="templates.js"></script>
     <!-- <script src="navbar.js"></script> -->
     <!-- animation javascript -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
