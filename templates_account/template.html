@@ -1,0 +1,169 @@
+{% load static %}
+{% load cms_tags sekizai_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/template.css" />
+    {% render_block "css" %}
+  </head>
+  <body>
+    <header class="nav-container">
+      <a href="index.html" class="logo-container">
+        <img src="./images/clr-logo.svg" alt="logo" class="logo top-image">
+        <img src="./images/logo.svg" alt="logo" class="logo">
+      </a>
+      <nav class="nav-bar" id="nav-links">
+        <ul class="nav-items">
+          <li><a class="nav-links hidden-for-mobile" href="templates/">Templates</a></li>
+          <li id="select-field" class="hidden-for-mobile">
+            <a class="nav-links" id="drop-btn" href="#/">Build website <span id="drop-down" data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
+            <div class="drop-menu" id="drop-menu">
+                <p>Choose a template</p>
+                <ul id="drop-list">
+                    <li><a class="drop-down-options"href="blog.html">Blog</a></li>
+                    <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li>
+                    <li><a class="drop-down-options"href="Portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+          </li>
+          <li><a class="nav-links" href="contact us.html">Contact us</a></li>
+        </ul>
+        <!-- toggle button for switchind theme goes here -->
+        <div class="wrapper-color-switch">
+          <input type="checkbox" id="input-color-switch" />
+          <label for="input-color-switch" class="color-switch">
+            <div class="color-switch-toggle"></div>
+          </label>
+        </div>
+        <!-- toggle button for switchind theme ends here -->
+        <div class="nav-buttons">
+          <button class="login-btn btn primary-btn">Log In</button>
+          <button class="secondary-btn btn signup-btn">Get Started</button>
+        </div>
+      </nav>
+      <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu" data-icon="charm:menu-hamburger"></span></a>
+    </header>
+    <div class="container">
+        <main>
+       
+            <!-- creating the first text in the body -->
+        <div class="first-text">
+            <h2>Give your Website ‘that’ awesome 
+                look by adding a Template</h2>
+        </div>
+        <div class="second-text">
+            <p>Select from 10,000+  unique Templates, 
+                suitable for whatever type of website you’re developing. 
+                Our Responsive Website Templates elevate the 
+                style and functionality of your web pages.</p>
+        </div>
+        <!-- End of first text -->
+
+        <!-- creating template card -->
+        <div class="third-text">
+            <h4>All templates</h4>
+        </div>
+        <div class="temp-grid-container1">
+            <div id="box">
+                <div class="box-img img1"></div>
+            </div>
+     
+            <div id="box" class="box2">
+                <div class="box-img img2"></div>
+            </div>
+     
+            <div id="box" class="box3">
+                <div class="box-img img3"></div>
+            </div>
+        </div>
+        <!-- <div class="temp-grid-container2">
+            <div id="box" class="box4">
+                
+            </div>
+     
+            <div id="box" class="box5">
+                
+            </div>
+     
+            <div id="box" class="box6">
+                
+            </div>
+        </div> -->
+        <!-- End of creating template card -->
+
+        <!-- next paragraph -->
+        <div class="next-btn">
+            <p id="next">Next page</p>
+        </div>
+        <!-- end of next paragraph -->
+
+        <!-- creating last content of main -->
+        <div class="container-box">
+            <h3>Need help choosing the right template?</h3>
+            <button class="btn login-btn last-btn">Help me choose</button>
+        </div>
+        <!-- End of creating last content of main -->
+
+    </main>
+    </div>
+    
+        
+    <footer>
+        <div class="footer-container">
+            <div class="product align-footer">
+                <h2 class="footer-header">Product</h2>
+                <ul class="footer-list">
+                    <a href="template.html"><li class="footer-item">Template</li></a>
+                    <a href="build.html"><li class="footer-item">Build website</li></a>
+                    <a href="dashboard.html"><li class="footer-item">Dashboard</li></a>
+                    <a href="features.html"><li class="footer-item">Features</li></a>
+                    <a href="sign.html"><li class="footer-item">Sign up</li></a>
+                </ul>
+            </div>
+            <div class="company align-footer">
+                <h2 class="footer-header">Company</h2>
+                <ul class="footer-list">
+                    <a href=""> <li class="footer-item">About DSYNE</li></a>
+                    <a href=""><li class="footer-item">Contact us</li></a>
+                </ul>
+            </div>
+            <div class="support align-footer">
+                <h2 class="footer-header">Support</h2>
+                <ul class="footer-list">
+                    <a href=""><li class="footer-item">Support Center</li></a>
+                    <a href=""><li class="footer-item">Getting started</li></a>
+                    <a href=""><li class="footer-item">Documentation</li></a>
+                    <a href=""><li class="footer-item">FAQ</li></a>
+                </ul>
+              
+            </div>
+            <div class="about">
+                <img src="./images/dsyne 2 TEXT LOGO (1).png" alt="company logo" class="company-logo">
+                    <p class="footer-item1" id="platform">Dsyne is the leading website builder platform 
+                        for all content creators, irrespective of language
+                    </p>
+                    <p class="footer-item1" id="yearText">2022 Dsyne.com</p>
+                    <div class="socials">
+                        <a href="#" class="fa fa-facebook-square fa-3x"></a>
+                        <a href="#" class="fa fa-linkedin-square fa-3x"></a>
+                        <a href="#" class="fa fa-instagram fa-3x"></a>
+                        <a href="#" class="fa fa-twitter-square fa-3x"></a>
+                        
+                    </div>
+
+            </div>
+        
+        </div>
+   
+    </footer>
+    <!-- ICONIFY FRAMEWORK -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- ICONIFY FRAMEWORK -->
+    <script src="navbar.js"></script>
+  </body>
+</html>
