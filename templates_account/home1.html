@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <style>
+     body {
+      color: pink;
+      text-align: center;
+      } 
+ 
+    </style>
+  </head>
+  <body>
+    
+    <h1>Hello, {{ user.username|default:'Guest' }}</h1>
+
+    <p> Welcome to Team 20 CMS</p>
+    <div>
+      {% if user.is_authenticated %}    
+      {% else %}
+          <a href="{% url 'home' %}">Login</a>
+          <a href="{% url 'register' %}">Register</a>
+      {% endif %}
+  </div>
+  
+  </body>
+</html>
