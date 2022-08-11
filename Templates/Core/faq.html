@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ</title>
+  <link rel="stylesheet" href="faq.css" />
+</head>
+
+<body>
+  <header class="nav-container">
+    <a href="index.html" class="logo-container">
+      <img src="./faq-images/" alt="logo" class="logo top-image">
+      <img src="./faq-images/logo.svg" alt="logo" class="logo">
+    </a>
+    <nav class="nav-bar" id="nav-links">
+      <ul class="nav-items">
+        <li><a class="nav-links hidden-for-mobile" href="templates.html">Templates</a></li>
+        <li id="select-field" class="hidden-for-mobile">
+          <a class="nav-links" id="drop-btn" href="#/">Build website <span id="drop-down"
+              data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
+          <div class="drop-menu" id="drop-menu">
+            <p>Choose a template</p>
+            <ul id="drop-list">
+              <li><a class="drop-down-options" href="blog.html">Blog</a></li>
+              <li><a class="drop-down-options" href="ecom.html">Ecommerce</a></li>
+              <li><a class="drop-down-options" href="Portfolio.html">Portfolio</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="nav-links" href="contact us.html">Contact us</a></li>
+      </ul>
+      <!-- toggle button for switchind theme goes here -->
+      <div class="wrapper-color-switch">
+        <input type="checkbox" id="input-color-switch" />
+        <label for="input-color-switch" class="color-switch">
+          <div class="color-switch-toggle"></div>
+        </label>
+      </div>
+      <!-- toggle button for switchind theme ends here -->
+      <div class="nav-buttons">
+        <button class="login-btn btn primary-btn">Log In</button>
+        <button class="secondary-btn btn signup-btn">Get Started</button>
+      </div>
+    </nav>
+    <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu"
+        data-icon="charm:menu-hamburger"></span></a>
+  </header>
+  <main>
+    <section class="wrapper">
+      <div class="container">
+        <div class="accordion-container">
+          <div class="accordion-head">
+            <h2 class="title">FAQ</h2>
+            <p>Find the answers to the <br class="hide"> common questions here!</p>
+            <img class="search-icon" src="./faq-images/Vector.png" alt="">
+          </div>
+          <div class="accordion">
+            <div class="faq">
+              <div class="question">
+                <h3>How to create your portfolio?</h3>
+                <i class="fa fa-angle-down fa-2x arrow" aria-hidden="true"></i>
+                <!-- <i class="fa-solid fa-2x fa-angle-down arrow"></i> -->
+              </div>
+              <div class="answer">
+                <p>
+                  To get started, create an account or log in to an existing one.
+                  Navigate to the Templates section and select portfolio. Then Choose
+                  from the list of themes available.
+                </p>
+              </div>
+            </div>
+            <div class="faq">
+              <div class="question">
+                <h3>Do I need any coding knowledge to create my website?</h3>
+                <i class="fa fa-angle-down fa-2x arrow" aria-hidden="true"></i>
+                <!-- <i class="fa-solid fa-2x fa-angle-down arrow"></i> -->
+              </div>
+              <div class="answer">
+                <p>
+                  No coding knowledge is required.
+                </p>
+              </div>
+            </div>
+            <div class="faq">
+              <div class="question">
+                <h3>How many templates do I have access to?</h3>
+                <i class="fa fa-angle-down fa-2x arrow" aria-hidden="true"></i>
+                <!-- <i class="fa-solid fa-2x fa-angle-down arrow"></i> -->
+              </div>
+              <div class="answer">
+                <p>
+                  As a registered user, you have access to all templates.
+                </p>
+              </div>
+            </div>
+            <div class="faq">
+              <div class="question">
+                <h3>How do I get a domain for my website?</h3>
+                <i class="fa fa-angle-down fa-2x arrow" aria-hidden="true"></i>
+                <!-- <i class="fa-solid fa-2x fa-angle-down arrow"></i> -->
+              </div>
+              <div class="answer">
+                <p>
+                  You can register with a third party domain provider and
+                  transfer to Dsyne.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-box hidden-for-mobile">
+          <img class="faq-image" src="./faq-images/question-gbcfacb4ab_1920 1.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="product">
+      <p class="p-head" style="font-family: Candara; font-size: 3em;">Product</p>
+      <p> <a href="#" class="flink"> Templates </a><br>
+        <a href="#" class="flink"> Build website </a><br>
+        <a href="#" class="flink">Features </a><br>
+        <a href="#" class="flink">Signup</a>
+      </p>
+    </div>
+    <div id="company">
+      <p class="p-head" style="font-family: Candara; font-size: 3em;">Company</p>
+      <p><a href="#" class="flink"> About Dsyne </a><br>
+        <a href="#" class="flink"> Contact Us </a>
+      </p>
+    </div>
+    <div id="support">
+      <p class="p-head" style="font-family: Candara; font-size: 3em;">Support</p>
+      <p> <a href="#" class="flink"> Support center </a><br>
+        <a href="#" class="flink"> Getting started </a><br>
+        <a href="#" class="flink"> Documentation </a><br>
+        <a href="#" class="flink"> FAQ </a>
+      </p>
+    </div>
+    <div id="dsyne">
+      <img class="footer-logo" src="./faq-images/dsyne 2 TEXT LOGO.png" alt="logo" height="100px" width="100px"
+        id="fimg">
+      <p id="logotxt">
+        Dsyne is the leading website builder platform
+        for <br class="hide2"> all content creators, irrespective of language
+        and <br class="hide2"> geographical boundaries. <br> 2022 Dsyne.com
+      <p class="socialicon">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </p>
+      </p>
+    </div>
+  </footer>
+  <!-- ICONIFY FRAMEWORK -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <!-- ICONIFY FRAMEWORK -->
+  <script src="faq.js"></script>
+</body>
+
+</html>
