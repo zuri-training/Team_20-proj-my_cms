@@ -83,12 +83,12 @@ ul {
 
 .top-image {
     position: absolute;
-    opacity: 0;
+
 }
 
-.top-image:hover {
+/* .top-image:hover {
     opacity: 1;
-}
+} */
 
 .nav-container {
     padding-inline: 3rem;
@@ -429,7 +429,7 @@ footer {
     width: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 0px 0px 15px;
     border-radius: 5px;
     color: black;
     background-color: white;
@@ -467,7 +467,7 @@ and the icons too. ie .fa*/
 
 .socialicon {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     position: relative;
     top: -25%;
 

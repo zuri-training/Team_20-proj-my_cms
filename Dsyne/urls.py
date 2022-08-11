@@ -32,6 +32,7 @@ urlpatterns = [
     path("api/v1/blog/", include("blog.api.urls")),
     path('signin/', views.signin, name='signin'),
     path('signin/login', views.signin, name='signin'),
+    path('templates/', views.templates, name='templates'),
     # path for django_cms
     re_path(r"^admin/", admin.site.urls),
     re_path(r"^", include("cms.urls")),

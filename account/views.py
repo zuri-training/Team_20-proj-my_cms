@@ -24,5 +24,6 @@ def signin(request):
         return render(request, 'login.html')
 
 
-
+def templates(request):
+    return render(request, 'template.html')
 
