@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio template</title>
+    <link rel="stylesheet" href="{% static 'css/portfolio/styles.css' %}">
+</head>
+<body>
+    <section class="first-section">
+        <header>
+            <div class="header">
+                <div class="logo-section">
+                    <div class="logo-img-bg">
+                        <a href="{% url 'portfolio' %}">Logo</a>
+                    </div>
+                    <h1>Site Name</h1>
+                </div>
+                <!-- Navigation Bar -->
+                <nav class="navbar">
+                    <ul class="nav-container">
+                        <li><a class="nav-links" href="{% url 'about' %}">About</a></li>
+                        <li><a class="nav-links" href="index.html">Work</a></li>
+                        <li><a class="nav-links" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <Main class="container">
+            <p id="user-occupation">Nature Photographer</p>
+            <h1 id="user-occupation-description">
+                HI, I am a new pharagraph, you  can edit me either by double tapping or by pressing the edit button at the top right corner of this page. 
+            </h1>
+        </Main>
+    </section>
+    <!-- SECOND SECTION OF THE PORTFOLIO TEMPLATE -->
+    <section class=" second-section container">
+        <div class="second-section-container">
+            <div class="column-1">
+                <div class="column1-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-1.png' %}" alt="" class="images"></div>
+                <div class="column2-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-img-4.png' %}" alt="" class="images column2-images-style"></div>
+            </div>
+            <div class="column-2">
+                <div class="column2-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-img-3.png' %}" alt="" class="images column2-images-style"></div>
+                <div class="column1-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-img-2.png' %}" alt="" class="images"></div>
+            </div>
+        </div>
+        <form >
+            <input type="text" class="message" placeholder="Send a Message">
+            <button type="submit" class="btn">Contact</button>
+        </form>
+    </section>
+    <!-- footerrrr -->
+<footer class="container">
+    <div class="footer">
+        <p>2022 JohnDoe@Dsgne.com</p>
+        <div class="call-number">
+            <p>Call:</p>
+            <p>+234 098 765 432</p>
+        </div>
+        <div>
+            <p>Follow:</p><br>
+            <div class="social-icon">
+                <span class="iconify" data-icon="ant-design:facebook-filled"></span>
+                <span class="iconify" data-icon="ant-design:instagram-filled"></span>
+                <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+</html>
