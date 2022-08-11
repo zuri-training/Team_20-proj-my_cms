@@ -8,6 +8,8 @@ Lo-fi and Hi-fi designs...
 I did all prototyping,Landing page design,Home page designs,forgot password design,All lo-fi designs and revamped all other designs
 https://www.figma.com/file/2RvePkcvlluELOIw8j22dD/My_cms-Dsyne..?node-id=239%3A41
 
+Designed the style guide system used
+https://www.figma.com/file/2RvePkcvlluELOIw8j22dD/My_cms-Dsyne..?node-id=140%3A2
 
 added to the wireframe 
 https://www.figma.com/file/2RvePkcvlluELOIw8j22dD/My_cms-Dsyne..?node-id=0%3A1
