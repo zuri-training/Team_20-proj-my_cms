@@ -83,12 +83,13 @@ ul {
 
 .top-image {
     position: absolute;
+    opacity:0;
 
 }
 
-/* .top-image:hover {
+ .top-image:hover {
     opacity: 1;
-} */
+} 
 
 .nav-container {
     padding-inline: 3rem;

@@ -1,3 +1,5 @@
+{% load static %}
+{% load cms_tags sekizai_tags %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,31 +9,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ</title>
-  <link rel="stylesheet" href="faq.css" />
+  <link rel="stylesheet" href="{% static 'css_core/faq.css' %}" />
+  {% render_block 'css' %}
 </head>
 
 <body>
   <header class="nav-container">
-    <a href="index.html" class="logo-container">
-      <img src="./faq-images/" alt="logo" class="logo top-image">
-      <img src="./faq-images/logo.svg" alt="logo" class="logo">
+    <a href="{% url 'dsyne' %}" class="logo-container">
+      <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
+      <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
     </a>
     <nav class="nav-bar" id="nav-links">
       <ul class="nav-items">
-        <li><a class="nav-links hidden-for-mobile" href="templates.html">Templates</a></li>
+        <li><a class="nav-links hidden-for-mobile" href="{% url 'templates' %}">Templates</a></li>
         <li id="select-field" class="hidden-for-mobile">
-          <a class="nav-links" id="drop-btn" href="#/">Build website <span id="drop-down"
+          <a class="nav-links" id="drop-btn" href="{% url 'templates' %}">Build website <span id="drop-down"
               data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
           <div class="drop-menu" id="drop-menu">
             <p>Choose a template</p>
             <ul id="drop-list">
-              <li><a class="drop-down-options" href="blog.html">Blog</a></li>
-              <li><a class="drop-down-options" href="ecom.html">Ecommerce</a></li>
-              <li><a class="drop-down-options" href="Portfolio.html">Portfolio</a></li>
+              <li><a class="drop-down-options" href="#">Blog</a></li>
+              <!-- <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li> -->
+              <li><a class="drop-down-options" href="{% url 'portfolio' %}">Portfolio</a></li>
             </ul>
           </div>
         </li>
-        <li><a class="nav-links" href="contact us.html">Contact us</a></li>
+        <li><a class="nav-links" href="{% url 'contact' %}">Contact us</a></li>
       </ul>
       <!-- toggle button for switchind theme goes here -->
       <div class="wrapper-color-switch">
@@ -42,8 +45,8 @@
       </div>
       <!-- toggle button for switchind theme ends here -->
       <div class="nav-buttons">
-        <button class="login-btn btn primary-btn">Log In</button>
-        <button class="secondary-btn btn signup-btn">Get Started</button>
+        <a href="{% url 'signin' %}"> <button class="login-btn btn primary-btn">Log In</button></a>
+        <a href="{% url 'register' %}"><button class="secondary-btn btn signup-btn">Get Started</button></a>
       </div>
     </nav>
     <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu"
@@ -56,7 +59,7 @@
           <div class="accordion-head">
             <h2 class="title">FAQ</h2>
             <p>Find the answers to the <br class="hide"> common questions here!</p>
-            <img class="search-icon" src="./faq-images/Vector.png" alt="">
+            <img class="search-icon" src="{% static '/media/faq-images/Vector.png' %}" alt="">
           </div>
           <div class="accordion">
             <div class="faq">
@@ -113,41 +116,39 @@
           </div>
         </div>
         <div class="image-box hidden-for-mobile">
-          <img class="faq-image" src="./faq-images/question-gbcfacb4ab_1920 1.png" alt="">
+          <img class="faq-image" src="{% static '/media/faq-images/question-gbcfacb4ab_1920 1.png' %}" alt="">
         </div>
       </div>
     </section>
-  </main>
-  <footer>
+  </main><footer>
     <div id="product">
-      <p class="p-head" style="font-family: Candara; font-size: 3em;">Product</p>
-      <p> <a href="#" class="flink"> Templates </a><br>
-        <a href="#" class="flink"> Build website </a><br>
-        <a href="#" class="flink">Features </a><br>
-        <a href="#" class="flink">Signup</a>
+      <p style="font-family: Candara; font-size: 3em;">Product</p>
+      <p> <a href="{% url 'templates' %}" class="flink"> Templates </a><br>
+        <!-- <a href="#" class="flink"> Build website </a><br> -->
+        <!-- <a href="#" class="flink">Features </a><br> -->
+        <a href="{% url 'signin' %}" class="flink">Login</a>
       </p>
     </div>
     <div id="company">
-      <p class="p-head" style="font-family: Candara; font-size: 3em;">Company</p>
-      <p><a href="#" class="flink"> About Dsyne </a><br>
-        <a href="#" class="flink"> Contact Us </a>
+      <p style="font-family: Candara; font-size: 3em;">Company</p>
+      <p><a href="{% url 'about' %}" class="flink"> About Dsyne </a><br>
+        <a href="{% url 'contact' %}" class="flink"> Contact Us </a>
       </p>
     </div>
     <div id="support">
-      <p class="p-head" style="font-family: Candara; font-size: 3em;">Support</p>
-      <p> <a href="#" class="flink"> Support center </a><br>
-        <a href="#" class="flink"> Getting started </a><br>
-        <a href="#" class="flink"> Documentation </a><br>
-        <a href="#" class="flink"> FAQ </a>
+      <p style="font-family: Candara; font-size: 3em;">Support</p>
+      <p> <a href="{% url 'support' %}" class="flink"> Support center </a><br>
+        <a href="{% url 'register' %}" class="flink"> Getting started </a><br>
+        <a href="{% url 'documentation' %}" class="flink"> Documentation </a><br>
+        <a href="{% url 'faq' %}" class="flink"> FAQ </a>
       </p>
     </div>
-    <div id="dsyne">
-      <img class="footer-logo" src="./faq-images/dsyne 2 TEXT LOGO.png" alt="logo" height="100px" width="100px"
+    <div id="dsyne"><img src="{% static 'images_C/dsyne 2 TEXT LOGO.png' %}" alt="logo" height="100px" width="100px"
         id="fimg">
       <p id="logotxt">
-        Dsyne is the leading website builder platform
-        for <br class="hide2"> all content creators, irrespective of language
-        and <br class="hide2"> geographical boundaries. <br> 2022 Dsyne.com
+        Dsyne is the leading website builder platform <br>
+        for all content creators, irrespective of language
+        <br> and geographical boundaries. <br> <br>2022 Dsyne.com
       <p class="socialicon">
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-linkedin"></a>
@@ -160,7 +161,8 @@
   <!-- ICONIFY FRAMEWORK -->
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <!-- ICONIFY FRAMEWORK -->
-  <script src="faq.js"></script>
+  <script src="{% static 'js_core/faq.js' %}"></script>
+  {% render_block "js" %}
 </body>
 
 </html>

@@ -22,6 +22,6 @@ css file: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templat
 images used: https://github.com/zuri-training/Team_20-proj-my_cms/tree/main/Templates/Core/documentation-images
 
 4. Profile page
-html file:
-css file:
-javascript file:
+html file: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/Dsyne_Profile_page/profile.html
+css file: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/Dsyne_Profile_page/profile.css
+javascript file: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/Dsyne_Profile_page/profile.js

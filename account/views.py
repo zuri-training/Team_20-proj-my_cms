@@ -8,7 +8,7 @@ from multiprocessing import context
 from account.forms import RegistrationForm
 
 
-# # Create your views here.
+# Create your views here.
 def signin(request):
     if request.user.is_authenticated:
         return redirect("/")
@@ -44,13 +44,13 @@ def register_view(request):
     else:
         form = RegistrationForm()
         context['registration_form'] = form
-    return render(request, 'account/register1.html', context)
+    return render(request, 'signup.html', context)
 
 
 
  
-def home(request):
-    return render(request,"home1.html")  
+def dsyne(request):
+    return render(request, 'landing-page.html') 
 
 
 
@@ -58,8 +58,25 @@ def home(request):
 #     form_class = UserCreationForm
 #     success_url = reverse_lazy("login")
 #     template_name = "register.html"
-
 def templates(request):
     return render(request, 'template.html')
+    
+def contact(request):
+    return render(request, 'contact-us.html')
 
 
+def questions(request):
+    return render(request, 'faq.html')
+
+
+def support(request):
+    return render(request, 'support.html')
+
+def documentation(request):
+    return render(request, 'documentation.html')
+
+def dashboard(request):
+    return render(request, 'dashboard.html')
+
+def about(request):
+    return render(request, 'about.html')
