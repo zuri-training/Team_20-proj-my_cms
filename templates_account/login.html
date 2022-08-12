@@ -12,43 +12,42 @@
 </head>
 <body>
     <header class="nav-container">
-        <a href="{% url 'dsyne' %}" class="logo-container">
-            <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
-            <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
-        </a>
-        <nav class="nav-bar" id="nav-links">
-            <ul class="nav-items">
-                <li><a class="nav-links hidden-for-mobile" href="{% url 'templates' %}">Templates</a></li>
-                <li id="select-field" class="hidden-for-mobile">
-                    <a class="nav-links" id="drop-btn" href="{% url 'templates' %}">Build website <span id="drop-down"
-                            data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
-                    <div class="drop-menu" id="drop-menu">
-                        <p>Choose a template</p>
-                        <ul id="drop-list">
-                            <li><a class="drop-down-options" href="#">Blog</a></li>
-                            <!-- <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li> -->
-                            <li><a class="drop-down-options" href="{% url 'portfolio' %}">Portfolio</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="nav-links" href="{% url 'contact-us' %}">Contact us</a></li>
-            </ul>
-            <!-- toggle button for switchind theme goes here -->
-            <div class="wrapper-color-switch">
+        <div>
+            <a href="{% url 'dsyne' %}" class="logo-container">
+                <img src="{% static 'images_T/clr-logo.svg' %}" alt="logo" class="logo top-image">
+                <img src="{% static 'images_T/logo.svg' %}" alt="logo" class="logo">
+            </a>
+            <nav class="nav-bar" id="nav-links">
+              <ul class="nav-items">
+                    <li><a class="nav-links hidden-for-mobile" href="{% url 'templates' %}">Templates</a></li>
+                    <li id="select-field" class="hidden-for-mobile">
+                        <a class="nav-links" id="drop-btn" href="{% url 'templates' %}">Build website <span id="drop-down" data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
+                        <div class="drop-menu" id="drop-menu">
+                            <p>Choose a template</p>
+                            <ul id="drop-list">
+                                <li><a class="drop-down-options"href="blog.html">Blog</a></li>
+                                <!-- <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li> -->
+                                <li><a class="drop-down-options"href="{% url 'portfolio' %}">Portfolio</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-links" href="{% url 'contact' %}">Contact us</a></li>
+              </ul>
+              <!-- toggle button for switchind theme goes here -->
+              <div class="wrapper-color-switch">
                 <input type="checkbox" id="input-color-switch" />
                 <label for="input-color-switch" class="color-switch">
-                    <div class="color-switch-toggle"></div>
+                  <div class="color-switch-toggle"></div>
                 </label>
-            </div>
-            <!-- toggle button for switchind theme ends here -->
-            <div class="nav-buttons">
+              </div>
+              <!-- toggle button for switchind theme ends here -->
+              <div class="nav-buttons">
                 <a href="{% url 'signin' %}"> <button class="login-btn btn primary-btn">Log In</button></a>
                 <a href="{% url 'register' %}"><button class="secondary-btn btn signup-btn">Get Started</button></a>
-            </div>
-        </nav>
-        <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu"
-                data-icon="charm:menu-hamburger"></span></a>
-        {% render_block "js" %}
+              </div>
+            </nav>
+            <a href="#/" class="hidden-for-desktop menu-hamburger menu" id="menu"><span class="iconify menu" data-icon="charm:menu-hamburger"></span></a>
+        </div>
     </header>
     <main>
 
@@ -69,7 +68,7 @@
                             <input type="password" name="password" id="user-password" placeholder="Password" required><span onclick="reveal()"></span>
                         </div>
                         <small>
-                            <a href="password-retrieval.html">Forgot Password?</a>
+                            <a href="#/">Forgot Password?</a>
                         </small>
                     </div>
 
