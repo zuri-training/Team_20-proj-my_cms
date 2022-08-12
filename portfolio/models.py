@@ -1,6 +1,4 @@
 # The below class is for the Portfolio App.
-from tkinter import CASCADE
-from unicodedata import name
 from django.db import models
 
 from django.contrib.auth import get_user_model
