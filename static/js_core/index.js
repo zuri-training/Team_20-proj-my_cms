@@ -37,10 +37,10 @@ function darkModeOff(){
 // })
 // swiping article
 let imageSources = [
-  "./images/articleOne.png",
-  "./images/articleTwo.png",
-  "./images/articleThree.png",
-  "./images/articleFour.png"
+  "/static/media/images/articleOne.png",
+  "/static/media/images/articleTwo.png", 
+  "/static/media/images/articleThree.png",
+  "/static/media/images/articleFour.png",
 ]
 let index = 0;
 setInterval(function(){

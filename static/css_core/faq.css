@@ -230,7 +230,7 @@ ul {
 .wrapper {
   height: auto;
   z-index: 2;
-  background-image: url(./faq-images/Rectangle\ 62.png);
+  background-image: url(/static/media/faq-images/Rectangle\ 62.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -536,12 +536,12 @@ footer > .fa:hover {
 }
 @keyframes themove {
   50% {
-    background-image: url(./faq-images/Rectangle\ 62.png);
+    background-image: url(/static/media/faq-images/Rectangle\ 62.png);
   }
   80% {
-    background-image: url(./faq-images/Rectangle\ 621.png);
+    background-image: url(/static/media/faq-images/Rectangle\ 621.png);
   }
   100% {
-    background-image: url(./faq-images/Rectangle\ 622.png);
+    background-image: url(/static/media/faq-images/Rectangle\ 622.png);
   }
 }
