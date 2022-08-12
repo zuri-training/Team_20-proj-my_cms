@@ -192,6 +192,8 @@ STATICFILES_DIRS = [
     # e.g "/var/www/static/",
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # media urls for django_cms
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
