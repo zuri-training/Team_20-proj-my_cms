@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Settings page</title>
+</head>
+<body>
+    <!-- place for nav or toggler -->
+
+    <!-- end of nav or toggolr -->
+
+    <!-- Creating the body -->
+    <div class="container-main">
+        <div class="side-content">
+            <div class="logo-1">
+                <img id="logo-1" src="./settings-images/dsyne 2 TEXT LOGO.png" alt="logo" style="width:120px; margin-bottom:40px;">
+            </div>
+            
+            <div class="socials" >
+                <a href="home.html" class="sidebar-links" style="padding-bottom:50px ;"><div class="sidebar-item"><span class="iconify " data-icon="bxs:home"></span>Home</div></a>
+                <a href="profile.html" class="sidebar-links"style="padding-bottom:50px ;"><div class="sidebar-item"><span class="iconify " data-icon="carbon:user-profile"></span>Profile</div></a>
+                <a href="template.html" class="sidebar-links"style="padding-bottom:50px ;"><div class="sidebar-item"><span class="iconify" data-icon="icon-park-outline:page-template"></span>Templates</div></a>
+                <a href="settings.html" class="sidebar-links"style="padding-bottom:50px ;"><div class="sidebar-item"><span class="iconify" data-icon="ci:settings"></span>Settings</div></a>
+                <a href="help.html" class="sidebar-links"style="padding-bottom:50px ;"><div class="sidebar-item"><span class="iconify " data-icon="ic:round-help-outline"></span>Help</div></a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <main class="main-container">
+                <!-- NAVBAR -->
+              <div class="second-nav">  
+            <nav class="navbar">
+                <div class="input-field">
+                    <span class="iconify search" data-icon="akar-icons:search"></span>
+                    <input type="search" name="search" id="search-bar" placeholder=" Search"style="width:300px; text-align:center;">
+                </div>
+<!-- toggle button for switchind theme goes here -->
+              <div class="wrapper-color-switch">
+                <input type="checkbox" id="input-color-switch" />
+                <label for="input-color-switch" class="color-switch">
+                  <div class="color-switch-toggle"></div>
+                </label>
+              </div>
+<!-- toggle button for switchind theme ends here -->
+              <span class="iconify nav-icons" data-icon="carbon:notification-new"></span>
+              <span class="iconify nav-icons" data-icon="bytesize:settings"></span>
+
+              <div class="nav-profile">
+                <img src="./settings-images/avatar.png" alt="" class="profile-pic">
+                <div id="select-field">
+                <span class="iconify nav-icons drop-down-icon" data-icon="ri:arrow-drop-down-line"></span>
+                <div class="drop-menu">
+                    <ul class="drop-down-item" id="drop-menu">
+                        <li><a href="#" class="drop-down-options">Edit profile picture</a></li>
+                        <div class="full-width"></div>
+                        <li><a href="#" class="drop-down-options">Edit Account settings</a></li>
+                        <div class="full-width"></div>
+                        <button class="edit-btn btn signup-btn"style="padding:10px; border-radius:10px;--">Sign up</button>
+                        <div class="full-width"></div>
+                        <li><a href="#/" class="drop-down-options">English</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            </nav>
+            <span class="login-info">login info</span>
+                <form action="#">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" placeholder="jamesbrown2022@gmail.com" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="********" required>
+                    <label for="recovery">Recovery phone number</label>
+                    <input type="tel" name="recovery" placeholder="+234-81-1234-5678" required>
+                </form>
+
+                <section class="authentication sections-mb">
+                    <span class="login-info">2-factor authentication</span>
+                    <div class="page-bottom-items">
+                        <span class="page-bottom-text">Authentication app</span>
+                        <button class="page-bottom-btn">Enable</button>
+                    </div>
+
+                    <div class="page-bottom-items">
+                        <span class="page-bottom-text">Phone number</span>
+                        <button class="page-bottom-btn">Enable</button>
+                    </div>
+                </section>
+
+                <section class="social-login sections-mb">
+                    <span class="login-info">social login</span>
+                    <div class="page-bottom-items">
+                        <div>
+                            <span class="page-bottom-text">Google Account</span>
+                            <p class="small-text">James Brown</p>
+                        </div>
+                        <button class="page-bottom-btn">Disable</button>
+                        
+                    </div>
+
+                    <div class="page-bottom-items">
+                        <div>
+                            <span class="page-bottom-text">Facebook Account</span>
+                            <p class="small-text">Disabled</p>
+                        </div>
+                        <button class="page-bottom-btn">Enable</button>
+                    </div>
+                </section>
+
+                <span class="delete-account">Delete Account</span>
+            </main>
+        </div>
+
+               
+           
+        </div>
+        
+         
+        <!-- navbar created -->
+              
+    <footer>
+        <div class="footer-container">
+            <div class="product align-footer">
+                <h2 class="footer-header"style="margin-right:70px ;">Product</h2>
+                <ul class="footer-list">
+                    <a href="template.html"><li class="footer-item">Template</li></a>
+                    <a href="build.html"><li class="footer-item">Build website</li></a>
+                    <a href="dashboard.html"><li class="footer-item">Dashboard</li></a>
+                    <a href="features.html"><li class="footer-item">Features</li></a>
+                    <a href="sign.html"><li class="footer-item">Sign up</li></a>
+                </ul>
+            </div>
+            <div class="company align-footer">
+                <h2 class="footer-header"style="margin-right:70px ;">Company</h2>
+                <ul class="footer-list">
+                    <a href="about.html"> <li class="footer-item">About DSYNE</li></a>
+                    <a href=""><li class="footer-item">Contact us</li></a>
+                </ul>
+            </div>
+            <div class="support align-footer">
+                <h2 class="footer-header" style="margin-right:70px ;">Support</h2>
+                <ul class="footer-list">
+                    <a href=""><li class="footer-item">Support Center</li></a>
+                    <a href=""><li class="footer-item">Getting started</li></a>
+                    <a href=""><li class="footer-item">Documentation</li></a>
+                    <a href=""><li class="footer-item">FAQ</li></a>
+                </ul>
+              
+            </div>
+            <div class="about">
+                <img src="./settings-images/dsyne 2 TEXT LOGO.png" alt="company logo" class="company-logo">
+                    <p class="footer-item1" id="platform"style="margin-top:-30px;">Dsyne is the leading website builder platform 
+                        for all content creators, irrespective of language
+                    </p>
+                    <p class="footer-item1" id="yearText">2022 Dsyne.com</p>
+                    <div class="socials-2" style="width:1px;display:flex;text-decoration: none;">
+                        <a href="#" class="fa fa-facebook-square fa-3x"style="text-decoration: none;"></a>
+                        <a href="#" class="fa fa-linkedin-square fa-3x"style="text-decoration: none;"></a>
+                        <a href="#" class="fa fa-instagram fa-3x"style="text-decoration: none;"></a>
+                        <a href="#" class="fa fa-twitter-square fa-3x"style="text-decoration: none;"></a>
+                        
+                    </div>
+
+            </div>
+        
+        </div>
+   
+    </footer>"
+        <!-- ending of navbvar  -->
+    </div>
+    <!-- End of creating body -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script src="./settings.js"></script>
+</body>
+</html>
