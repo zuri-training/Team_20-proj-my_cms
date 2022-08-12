@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 @font-face {
     font-family: 'Candara';
-    src: url(../assets/Candara\ Font.ttf);
+    src: url(/static/media/assets/Candara\ Font.ttf);
     font-display: swap;
 }
 
@@ -14,7 +14,7 @@ h1{
     font-family: 'Candara';
 }
 body{
-    background: url(../assets/Frame\ 1.png);
+    background: url(/static/media/assets/Frame\ 1.png);
     background-color: var(--bg-color-2);
     min-width: 100%;
     height: 100vh;
@@ -269,13 +269,13 @@ border-radius: 6px;
 /* background animation */
 @keyframes themove {
     50%{
-        background-image: url(../assets/Frame\ 1.png);
+        background-image: url(/static/media/assets/Frame\ 1.png);
     }
     80%{
-        background-image: url(../assets/Frame\ 2.png);
+        background-image: url(/static/media/assets/Frame\ 2.png);
     }
     100%{
-        background-image: url(../assets/Frame\ 3.png);
+        background-image: url(/static/media/assets/Frame\ 3.png);
     }
 }
 /* background animation */
@@ -369,7 +369,7 @@ div label{
 
 /* Hidden icon displayed in input */
 .login span, .register span{
-    background-image: url(../assets/password-hidden-icon.svg);
+    background-image: url(/static/media/assets/password-hidden-icon.svg);
     background-repeat: no-repeat;
     position: relative;
     top: -25px;
@@ -399,15 +399,15 @@ div label{
 }
 .login #facebook, .register #facebook{
     background-position: 33px 8px;
-    background-image: url(../assets/facebook-icon.svg);
+    background-image: url(/static/media/assets/facebook-icon.svg);
 }
 .login #google, .register #google{
     background-position: 38px 8px;
-    background-image: url(../assets/google-icon.svg);
+    background-image: url(/static/media/assets/google-icon.svg);
 }
 .login #apple, .register #apple{
     background-position: 45px 6px;
-    background-image: url(../assets/apple-icon.svg);
+    background-image: url(/static/media/assets/apple-icon.svg);
 }
 /* Links styling */
 

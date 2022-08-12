@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css_core/form.css' %}">
     <title>Login</title>
+    {% render_block "css" %}
 </head>
 <body>
     <header class="nav-container">
-        <a href="index.html" class="logo-container">
+        <a href="{% url 'dsyne' %}" class="logo-container">
             <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
             <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
         </a>
@@ -95,6 +96,7 @@
     </main>
 
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="{% static 'js_core/forms.js' %}"></script>
+    {% render_block "js" %}
 </body>
 </html>

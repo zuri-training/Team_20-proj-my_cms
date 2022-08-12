@@ -8,17 +8,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact us</title>
-    <link rel="stylesheet" href="{% static 'cs_core/contact-us.css' %}">
     <link href="http://fonts.cdnfonts.com/css/inder" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara" rel="stylesheet"
         type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css_core/contact-us.css' %}">
     {% render_block "css" %}
 </head>
 
 <body>
     <header class="nav-container">
-        <a href="index.html" class="logo-container">
+        <a href="{% url 'dsyne' %}" class="logo-container">
             <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
             <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
         </a>
@@ -37,7 +37,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a class="nav-links" href="{% url 'contact-us' %}">Contact us</a></li>
+                <li><a class="nav-links" href="{% url 'contact' %}">Contact us</a></li>
             </ul>
             <!-- toggle button for switchind theme goes here -->
             <div class="wrapper-color-switch">
@@ -73,33 +73,33 @@
         </form>
         <div id="enquiries">
             <p>enquries@dsyne.co</p>
-            <img src="./dsyne 2 white (3).png" alt="Dsynelogo" height="350px" width="100%">
+            <img src="{% static 'images_C/dsyne 2 white (3).png' %}" alt="Dsynelogo" height="350px" width="100%">
         </div>
     </main>
     <footer>
         <div id="product">
             <p style="font-family: Candara; font-size: 2em;">Product</p>
-            <p> <a href="#" class="flink"> Templates </a><br>
-                <a href="#" class="flink"> Build website </a><br>
-                <a href="#" class="flink">Features </a><br>
-                <a href="#" class="flink">Signup</a>
+            <p> <a href="{% url 'templates' %}" class="flink"> Templates </a><br>
+                <!-- <a href="#" class="flink"> Build website </a><br> -->
+                <!-- <a href="#" class="flink">Features </a><br> -->
+                <a href="{% url 'signin' %}" class="flink">Login</a>
             </p>
         </div>
         <div id="company">
             <p style="font-family: Candara; font-size: 2em;">Company</p>
-            <p><a href="#" class="flink"> About Dsyne </a><br>
-                <a href="#" class="flink"> Contact Us </a>
+            <p><a href="{% url 'about' %}" class="flink"> About Dsyne </a><br>
+                <a href="{% url 'contact' %}" class="flink"> Contact Us </a>
             </p>
         </div>
         <div id="support">
             <p style="font-family: Candara; font-size: 2em;">Support</p>
-            <p> <a href="#" class="flink"> Support center </a><br>
-                <a href="#" class="flink"> Getting started </a><br>
-                <a href="#" class="flink"> Documentation </a><br>
-                <a href="#" class="flink"> FAQ </a>
+            <p> <a href="{% url 'support' %}" class="flink"> Support center </a><br>
+                <a href="{% url 'register' %}" class="flink"> Getting started </a><br>
+                <a href="{% url 'documentation' %}" class="flink"> Documentation </a><br>
+                <a href="{% url 'faq' %}" class="flink"> FAQ </a>
             </p>
         </div>
-        <div id="dsyne"><img src="static/images_C/dsyne 2 TEXT LOGO.png" alt="logo" height="100px" width="100px" id="fimg">
+        <div id="dsyne"><img src="{% static 'images_C/dsyne 2 TEXT LOGO.png' %}" alt="logo" height="100px" width="100px" id="fimg">
             <p id="logotxt">
                 Dsyne is the leading website builder platform <br>
                 for all content creators, irrespective of language
@@ -113,7 +113,7 @@
             </p>
         </div>
     </footer>
-    <script src="static/contact-us.js"></script>
+    <script src="{% static 'js_core/contact.js' %}"></script>
      {% render_block "js" %}
 </body>
 

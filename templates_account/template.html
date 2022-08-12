@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="nav-container">
-      <a href="index.html" class="logo-container">
+      <a href="{% url 'dsyne' %}" class="logo-container">
         <img src="{% static 'images_T/clr-logo.svg' %}" alt="logo" class="logo top-image">
         <img src="{% static 'images_T/logo.svg' %}" alt="logo" class="logo">
       </a>
@@ -26,13 +26,13 @@
             <div class="drop-menu" id="drop-menu">
                 <p>Choose a template</p>
                 <ul id="drop-list">
-                    <li><a class="drop-down-options"href="{% url 'blog' %}">Blog</a></li>
+                    <li><a class="drop-down-options"href="{% url 'index' %}">Blog</a></li>
                     <!-- <li><a class="drop-down-options"href="ecom/">Ecommerce</a></li> -->
                     <li><a class="drop-down-options"href="{% url 'portfolio' %}">Portfolio</a></li>
                 </ul>
             </div>
           </li>
-          <li><a class="nav-links" href="{% url 'contact-us' %}">Contact us</a></li>
+          <li><a class="nav-links" href="{% url 'contact' %}">Contact us</a></li>
         </ul>
         <!-- toggle button for switchind theme goes here -->
         <div class="wrapper-color-switch">
@@ -129,8 +129,8 @@
             <div class="company align-footer">
                 <h2 class="footer-header">Company</h2>
                 <ul class="footer-list">
-                    <a href="{% url 'about-us' %}"> <li class="footer-item">About DSYNE</li></a>
-                    <a href="{% url 'contact-us' %}"><li class="footer-item">Contact us</li></a>
+                    <a href="{% url 'about' %}"> <li class="footer-item">About DSYNE</li></a>
+                    <a href="{% url 'contact' %}"><li class="footer-item">Contact us</li></a>
                 </ul>
             </div>
             <div class="support align-footer">

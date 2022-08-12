@@ -73,3 +73,7 @@ class PostDeleteView(DeleteView):
         Post.published.all()
     )  # return all the queried data that has status as "published"
     fields = "__all__"  # returns all the fields data
+
+
+def blog(request):
+    return render(request, 'blog.html')

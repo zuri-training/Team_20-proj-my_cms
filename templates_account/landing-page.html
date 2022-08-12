@@ -24,7 +24,7 @@
     <!-- FIRST SECTION -->
     <section class="first-section">
         <header class="nav-container">
-            <a href="index.html" class="logo-container">
+            <a href="{% url 'dsyne' %}" class="logo-container">
               <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
               <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
             </a>
@@ -42,7 +42,7 @@
                       </ul>
                     </div>
                 </li>
-                <li><a class="nav-links" href="{% url 'contact-us' %}">Contact us</a></li>
+                <li><a class="nav-links" href="{% url 'contact' %}">Contact us</a></li>
               </ul>
               <!-- toggle button for switchind theme goes here -->
               <div class="wrapper-color-switch">
@@ -177,7 +177,7 @@
 
 
                    <!-- THIS IS WHERE THAT SCROLLING EFFECT COMES INTO PLAY -->
-                <a href="{% url 'template' %}" class="btn disabled-btn">View More</a>
+                <a href="{% url 'templates' %}" class="btn disabled-btn">View More</a>
             </div>
             
         </div>
@@ -187,7 +187,7 @@
         <p>
             Dsyne is the leading website builder platform for all <br> content creators, irrespective of language barriers <br> and geographical boundaries.
         </p>
-        <a href="{% url 'template' %}" class="btn secondary-btn">Create Your next website with Dsyne Today</a>
+        <a href="{% url 'templates' %}" class="btn secondary-btn">Create Your next website with Dsyne Today</a>
     </section>
     <footer>
         <div class="footer container">
@@ -195,19 +195,19 @@
                 <h4>Product</h4>
                 <a class="Footer-links" href="{% url 'templates' %}">Template</a>
                 <!-- <a class="Footer-links" href="build-website.html">Build website</a> -->
-                <a class="Footer-links" href="{% url 'dashboard' %}">Dashboard</a>
+                <a class="Footer-links" href=" 'dashboard'">Dashboard</a>
                 <!-- <a class="Footer-links" href="features.html">Features</a> -->
                 <a class="Footer-links" href="{% url 'signin' %}">Login</a>
             </div>
             <div class="footer-list">
                 <h4>Company</h4>
-                <a class="Footer-links" href="{% url 'about-us' %}">About DSYNE</a>
-                <a class="Footer-links" href="{% url 'contact-us' %}">Contact Us</a>
+                <a class="Footer-links" href="'{% url 'about' %}' ">About DSYNE</a>
+                <a class="Footer-links" href="{% url 'contact' %}">Contact Us</a>
             </div>
             <div class="footer-list">
                 <h4>Support</h4>
                 <a class="Footer-links" href="{% url 'support' %}">Support Center</a>
-                <a class="Footer-links" href="{% url 'register/' %}">Getting Started</a>
+                <a class="Footer-links" href="{% url 'register' %}">Getting Started</a>
                 <a class="Footer-links" href="{% url 'faq' %}">FAQ</a>
             </div>
             <div class="footer-list last-footer-list">

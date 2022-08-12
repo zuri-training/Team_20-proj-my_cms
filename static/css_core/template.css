@@ -357,15 +357,15 @@ a {
 }
 
 .img1 {
-    background: url(./images_T/frame1\ \(1\)\ \(1\).png) center center no-repeat;
+    background: url(/static/media/portfolio/frame1\ \(1\)\ \(1\).png) center center no-repeat;
 }
 
 .img2 {
-    background: url(./images_T/frame2\ \(1\).png) center center no-repeat;
+    background: url(/static/media/portfolio/frame2\ \(1\).png) center center no-repeat;
 }
 
 .img3 {
-    background: url(./images_T/frame3\ \(1\).png) center center no-repeat;
+    background: url(/static/media/portfolio/frame3\ \(1\).png) center center no-repeat;
 }
 
 
