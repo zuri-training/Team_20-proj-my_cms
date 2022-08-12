@@ -1,4 +1,6 @@
 
+I was the assistant team lead of team_20 and was also in charge of assigning task to the frontend developers and ensuring it's been done.
+
 I worked on our landing page:
 https://github.com/zuri-training/Team_20-proj-my_cms/tree/main/Templates/Core/Dsgne%20Landing%20page
 
@@ -12,3 +14,6 @@ https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Portfol
 
 
 I worked on the frontend of the user's dashboard:
+https://github.com/zuri-training/Team_20-proj-my_cms/tree/main/Templates/Core/Authenticated%20Users/Dashboard
+
+

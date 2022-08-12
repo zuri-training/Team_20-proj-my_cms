@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard|Dsgne</title>
+    <link rel="shortcut icon" href="favicon.ico" type="./logo.png">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="page-flex">
+        <aside class="side-bar">
+            <div class="logo-container"><img src="./images/dsyne 2 LOGO 1.png" alt="LOGO" class="logo"></div>
+            <div class="side-bar-menu">
+                <div class="side-bar-options">
+                    <span class="iconify side-bar-icon" data-icon="ci:home-alt-fill"></span>
+                    <a href="home.html" class="side-bar-links">Home</a>
+                </div>
+                <div class="side-bar-options">
+                    <span class="iconify side-bar-icon" data-icon="material-symbols:analytics-outline"></span>
+                    <a href="analytics.html" class="side-bar-links">Analytics</a>
+                </div>
+                <div class="side-bar-options">
+                    <span class="iconify side-bar-icon" data-icon="material-symbols:palette-outline"></span>
+                     <!-- This should be linking to edit page that Ibukun talked about -->
+                    <a href="design.html" class="side-bar-links">Design</a> 
+                    <!-- This should be linking to edit page that Ibukun talked about -->
+                </div>
+                <div class="side-bar-options">
+                    <span class="iconify side-bar-icon" data-icon="bx:help-circle"></span>
+                    <a href="help" class="side-bar-links">Help</a>
+                </div>
+            </div>
+        </aside>
+        <div class="main-page">
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <div class="input-field">
+                    <span class="iconify search" data-icon="akar-icons:search"></span>
+                    <input type="search" name="search" id="search-bar" placeholder=" Search">
+                </div>
+                <!-- toggle button for switchind theme goes here -->
+              <div class="wrapper-color-switch">
+                <input type="checkbox" id="input-color-switch" />
+                <label for="input-color-switch" class="color-switch">
+                  <div class="color-switch-toggle"></div>
+                </label>
+              </div>
+                  <!-- toggle button for switchind theme ends here -->
+              <span class="iconify nav-icons" data-icon="carbon:notification-new"></span>
+              <span class="iconify nav-icons" data-icon="bytesize:settings"></span>
+              <div class="nav-profile">
+                <img src="./images/avatar.png" alt="" class="profile-pic">
+                <div id="select-field">
+                <span class="iconify nav-icons drop-down-icon" data-icon="ri:arrow-drop-down-line"></span>
+                <div class="drop-menu">
+                    <ul class="drop-down-item" id="drop-menu">
+                        <li><a href="#" class="drop-down-options">Edit profile picture</a></li>
+                        <div class="full-width"></div>
+                        <li><a href="#" class="drop-down-options">Edit Account settings</a></li>
+                        <div class="full-width"></div>
+                        <button class="edit-btn btn signup-btn">Edit</button>
+                        <div class="full-width"></div>
+                        <li><a href="#/" class="drop-down-options">English</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            </nav>
+                <main class="container">
+                    <div class="welcome-message">
+                        <p>Welcome to your dashboard!</p>
+                        <div class="welcome-message-btn">
+                            <button class="site-action btn primary-btn">Site Action</button>
+                            <button class="edit-btn btn signup-btn">Edit</button>
+                        </div>
+                    </div>
+                </main>
+                <div class="cards container">
+                    <div class="card-content">
+                        <p class="card-paragraph">Page Views</p>
+                        <div>
+                            <p class="figure">1342</p>
+                            <p class="percentage">+32%</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-paragraph">Visitors</p>
+                        <div>
+                            <p class="figure">256</p>
+                            <p class="percentage">+23%</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-paragraph">Average Engagement Rate</p>
+                        <div>
+                            <p class="figure">75.3</p>
+                            <p class="percentage">+32%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-main-content container">
+                    <!-- A div wrapping the first two items on the main part of the dashboard -->
+                    <div class="dashboard-wrapper">
+                      <div class="first-container">
+                        <p class="card-heading">Traffic Channels</p>
+                        <div class="charts">
+                            <div class="pie-chart">
+                                <p>62% <span>Overall traffic</span></p>
+                            </div>
+                            <div class="pie-chart-note">
+                                
+                                <div class="notes">
+                                    <div class="inner-flex">
+                                      <div class="track-box-one"></div>
+                                         <p>direct</p>
+                                      </div>
+                                      <p>40%</p>
+                                    </div>
+                                <div class="notes">
+                                <div class="inner-flex">
+                                  <div class="track-box"></div>
+                                     <p>Referral</p>
+                                  </div>
+                                  <p>25%</p>
+                                </div>
+                                <div class="notes">
+                                    <div class="inner-flex">
+                                      <div class="track-box-three"></div>
+                                         <p>Emails</p>
+                                      </div>
+                                      <p>20%</p>
+                                    </div>
+                                    <div class="notes">
+                                        <div class="inner-flex">
+                                          <div class="track-box-four"></div>
+                                             <p>Others</p>
+                                          </div>
+                                          <p>15%</p>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Beginning of the second container -->
+                    <div class="second-container">
+                        <div class="second-container-heading">
+                            <p class="title">Site Speed</p>
+                            <div class="second-container-nav-links">
+                                <a href="#/">Now</a>
+                                <a href="#/">Today</a>
+                                <a href="#/">Month</a>
+                            </div>
+                        </div>
+                        <div class="second-container-body">
+                            <div class="first-body-content">
+                                <p class="body-content">652 <span>mc</span></p>
+                            </div>
+                            <div class="second-body-content-container">
+                                <div class="second-body-content">
+                                    <p class="body-content">79 <span>Grade</span></p>
+                                </div>
+                                <div class="second-body-content">
+                                    <p class="body-content">1.82mb <span>Page size</span></p>
+                                </div>
+                                <div class="second-body-content">
+                                    <p class="body-content">652 mc <span>Load time</span></p>
+                                </div>
+                                <div class="second-body-content">
+                                    <p class="body-content">42<span>Request</span></p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- A div wrapping the first two items on the main part of the dashboard -->
+                <div class="dashboard-flex-item">
+                    <div class="notifications-heading">
+                        <p>Lastest Activity</p>
+                        <span class="iconify" data-icon="charm:menu-kebab"></span>
+                    </div>
+                    <div class="notification-body">
+                        <div class="notification-flex">
+                            <img src="./images/avatar.png" alt="" class="notification-image">
+                            <p class="notification-message">Subscribed to your newsletter</p>
+                        </div>
+                        <div class="notification-flex">
+                            <img src="./images/avatar.png" alt="" class="notification-image">
+                            <p class="notification-message">Subscribed to your newsletter</p>
+                        </div>
+                        <div class="notification-flex">
+                            <img src="./images/avatar.png" alt="" class="notification-image">
+                            <p class="notification-message">Subscribed to your newsletter</p>
+                        </div>
+                        <div class="notification-flex">
+                            <img src="./images/avatar.png" alt="" class="notification-image">
+                            <p class="notification-message">Subscribed to your newsletter</p>
+                        </div>
+                        <div class="notification-flex">
+                            <img src="./images/avatar.png" alt="" class="notification-image">
+                            <p class="notification-message">Subscribed to your newsletter</p>
+                        </div>
+                        <div class="notification-flex">
+                            <img src="./images/avatar.png" alt="" class="notification-image">
+                            <p class="notification-message">Subscribed to your newsletter</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+                </div>
+
+                <footer>
+                    <div class="footer container">
+                        <div class="footer-list">
+                            <h4>Product</h4>
+                            <a class="Footer-links" href="template.html">Template</a>
+                            <a class="Footer-links" href="template.html">Build website</a>
+                            <a class="Footer-links" href="dashboard.html">Dashboard</a>
+                            <a class="Footer-links" href="features.html">Features</a>
+                            <a class="Footer-links" href="sign-up.html">Sign Up</a>
+                        </div>
+                        <div class="footer-list">
+                            <h4>Company</h4>
+                            <a class="Footer-links" href="about.html">About DSYNE</a>
+                            <a class="Footer-links" href="contact-us.html">Contact Us</a>
+                        </div>
+                        <div class="footer-list">
+                            <h4>Support</h4>
+                            <a class="Footer-links" href="support.html">Support Center</a>
+                            <a class="Footer-links" href="login.html">Getting Started</a>
+                            <a class="Footer-links" href="FAQ.html">FAQ</a>
+                        </div>
+                        <div class="footer-list last-footer-list">
+                            <a href="index.html" class="logo-container">
+                                <img src="./images/dsyne 2 LOGO 1.png" alt="logo" class="logo footer-logo">
+                              </a>
+                            <p>Dsyne is the leading website builder platform for all content creators, irrespective of language and geographical boundaries.</p>
+                            <p>2022 Dsyne.com</p>
+                            <div class="footer-icons">
+                                <span class="iconify footer-links" data-icon="fa:facebook-official"></span>
+                                <span class="iconify footer-links" data-icon="bi:linkedin"></span>
+                                <span class="iconify footer-links" data-icon="ant-design:instagram-filled"></span>
+                                <span class="iconify footer-links" data-icon="akar-icons:twitter-fill"></span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    <script src="index.js"></script>
+</body>
+</html>
