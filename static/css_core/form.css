@@ -117,6 +117,9 @@ border-radius: 6px;
     cursor: pointer;
     font-family: 'Inder';
 }
+.nav-buttons a{
+    color: #000000;
+}
 .login-btn{
     background-color: #2F6A66;
     border-radius: 12px; 
