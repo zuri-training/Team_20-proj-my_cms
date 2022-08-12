@@ -58,7 +58,6 @@ def dsyne(request):
 #     form_class = UserCreationForm
 #     success_url = reverse_lazy("login")
 #     template_name = "register.html"
-
 def templates(request):
     return render(request, 'template.html')
     

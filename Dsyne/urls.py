@@ -32,8 +32,8 @@ urlpatterns = [
     path("portfolio/", include("portfolio.urls")),
     # blogPost url
     path("blog/", include("blog.urls")),
-    # url for blog restApi
-    path("api/v1/blog/", include("blog.api.urls")),
+    # # url for blog restApi
+    # path("api/v1/blog/", include("blog.api.urls")),
     path('signin/', views.signin, name='signin'),
     path('signin/login', views.signin, name='signin'),
     path('templates/', views.templates, name='templates'),

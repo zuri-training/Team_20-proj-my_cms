@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./analytics.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Analytics</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="input-field">
+            <span class="iconify search" data-icon="akar-icons:search"></span>
+            <input type="search" name="search" id="search-bar" placeholder=" Search">
+        </div>
+        <!-- toggle button for switchind theme goes here -->
+        <div class="wrapper-color-switch">
+            <input type="checkbox" id="input-color-switch" />
+            <label for="input-color-switch" class="color-switch">
+                <div class="color-switch-toggle"></div>
+            </label>
+        </div>
+        <!-- toggle button for switchind theme ends here -->
+        <span class="iconify nav-icons" data-icon="carbon:notification-new"></span>
+        <span class="iconify nav-icons" data-icon="bytesize:settings"></span>
+        <!-- <! -----Dropdown Menu Starts Here---- -->
+        <div class="nav-profile">
+            <img src="./images/Ellipse 1.png" alt="" class="profile-pic">
+            <div id="select-field">
+                <span class="iconify nav-icons drop-down-icon" data-icon="ri:arrow-drop-down-line"></span>
+                <div class="drop-menu">
+                    <ul class="drop-down-item" id="drop-menu">
+                        <li><a href="#" class="drop-down-options">Edit profile picture</a></li>
+                        <div class="full-width"></div>
+                        <li><a href="#" class="drop-down-options">Edit Account information</a></li>
+                        <div class="full-width"></div>
+                        <button class="edit-btn btn signup-btn">Sign out</button>
+                        <div class="full-width"></div>
+                        <li><a href="#/" class="drop-down-options">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- SIDEBAR START -->
+    <aside class="sidebar">
+        <img src="./images/dsyne 2 TEXT LOGO.png" class="sidebar-logo" alt="">
+        <ul class="sidebar-links">
+            <a href=""></a>
+            <li><img class="simage" src="./images/ci_home-alt-fill.png" alt=""><a href=""> Home</a></li>
+            <li><img class="simage" src="./images/ic_outline-analytics.png" alt=""><a id="active" href=""> Analytics</a>
+            </li>
+            <li><img class="simage" src="./images/bx_palette.png" alt=""><a href=""> Design</a></li>
+            <li><img class="simage" src="./images/bx_help-circle.png" alt=""><a href=""> Help</a></li>
+        </ul>
+    </aside>
+    <!-- SIDEBAR END -->
+
+    <!-- MAIN START -->
+    <main class="main-container">
+        <div class="hero-top">
+            <div class="hero-img-container">
+                <img class="hero-img" src="./images/top-analytics.png" alt="analysis illustration">
+            </div>
+            <div class="hero-text">
+                <h3>AUDIENCE STATISTICS</h3>
+                <p>Know when your audience visit and <br>how they interact with your website</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="time-button active">Day</button>
+            <button class="time-button">Week</button>
+            <button class="time-button">Month</button>
+        </div>
+        <div class="statistics">
+            <div class="card1 card">
+                <p>Visits</p>
+                <h1>+210</h1>
+                <img class="cardimg" src="./images/Bar.png" alt="bar analysis">
+            </div>
+            <div class="card2 card">
+                <p>Total Clicks</p>
+                <h1>+1567</h1>
+                <img class="cardimg" src="./images/Bar.png" alt="bar analysis">
+            </div>
+            <div class="card3 card">
+                <p>Time spent</p>
+                <h1>+20</h1>
+                <img class="cardimg" src="./images/Bar.png" alt="bar analysis">
+            </div>
+        </div>
+        <div class="bottom-image">
+            <img class="bottomimg" src="./images/bottom-analytics.png" alt="analysis illustration">
+        </div>
+    </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div id="product">
+            <p class="p-head" style="font-family: Candara; font-size: 3em;">Product</p>
+            <p> <a href="#" class="flink"> Templates </a><br>
+                <a href="#" class="flink"> Build website </a><br>
+                <a href="#" class="flink">Features </a><br>
+                <a href="#" class="flink">Signup</a>
+            </p>
+        </div>
+        <div id="company">
+            <p class="p-head" style="font-family: Candara; font-size: 3em;">Company</p>
+            <p><a href="#" class="flink"> About Dsyne </a><br>
+                <a href="#" class="flink"> Contact Us </a>
+            </p>
+        </div>
+        <div id="support">
+            <p class="p-head" style="font-family: Candara; font-size: 3em;">Support</p>
+            <p> <a href="#" class="flink"> Support center </a><br>
+                <a href="#" class="flink"> Getting started </a><br>
+                <a href="#" class="flink"> Documentation </a><br>
+                <a href="#" class="flink"> FAQ </a>
+            </p>
+        </div>
+        <div id="dsyne">
+            <img class="footer-logo" src="./images/dsyne 2 TEXT LOGO.png" alt="logo" height="100px" width="100px"
+                id="fimg">
+            <p id="logotxt">
+                Dsyne is the leading website builder platform
+                for <br class="hide2"> all content creators, irrespective of language
+                and <br class="hide2"> geographical boundaries. <br> 2022 Dsyne.com
+            <p class="socialicon">
+                <a href="#"><i class="fa-brands fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa fa-twitter"></i></a>
+            </p>
+            </p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="./analytics.js"></script>
+</body>
+
+</html>
