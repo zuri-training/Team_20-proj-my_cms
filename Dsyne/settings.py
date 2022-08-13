@@ -1,3 +1,4 @@
+# The above code is for the django admin customizer.
 """
 Django settings for Dsyne project.
 
@@ -12,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 from decouple import config
-import dj_database_url
+# import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,20 +24,26 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY")
+# create a file called `.env` in the root directory of the project
+# generate a secret key with:python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())' from this:
+# https://www.codingforentrepreneurs.com/blog/create-a-one-off-django-secret-key/
+SECRET_KEY = config(
+    "SECRET_KEY", 'django-insecure-z-*l#b#9_0gvk*t4o+3n*d71*v6-ce6r97za!@&wfnz&p6p#60')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
+if not DEBUG:
+    ALLOWED_HOSTS = [config("ALLOWED_HOSTS")]
 
 
 # Application definition
 
 INSTALLED_APPS = [
     "jazzmin",
-    
+
     # django-admin style for django_cms
     "djangocms_admin_style",
     "django.contrib.admin",
@@ -136,16 +143,41 @@ WSGI_APPLICATION = "Dsyne.wsgi.application"
 
 # if DEBUG:
 DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
-        }
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
+}
 # else:
 # DATABASES = {
 #     "default": dj_database_url.config()
 # }
 
+POSTGRES_DB = config("POSTGRES_DB")
+POSTGRES_PASSWORD = config("POSTGRES_PASSWORD")
+POSTGRES_USER = config("POSTGRES_USER")
+POSTGRES_HOST = config("POSTGRES_HOST")
+POSTGRES_PORT = config("POSTGRES_PORT")
+
+POSTGRES_READY = (
+    POSTGRES_DB is not None
+    and POSTGRES_PASSWORD is not None
+    and POSTGRES_USER is not None
+    and POSTGRES_HOST is not None
+    and POSTGRES_PORT is not None
+)
+
+if POSTGRES_READY:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": POSTGRES_DB,
+            "USER": POSTGRES_USER,
+            "PASSWORD": POSTGRES_PASSWORD,
+            "HOST": POSTGRES_HOST,
+            "PORT": POSTGRES_PORT,
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -224,8 +256,7 @@ THUMBNAIL_PROCESSORS = (
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-
-""" This settings is for the django admin customizer """ 
+""" This settings is for the django admin customizer """
 
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
@@ -250,11 +281,11 @@ JAZZMIN_SETTINGS = {
     "site_icon": None,
 
     # Welcome text on the login screen
-    "welcome_sign": "Welcome to the Dsyne CMS" 
-    
-    
-    
-    
+    "welcome_sign": "Welcome to the Dsyne CMS"
+
+
+
+
 }
 
 JAZZMIN_UI_TWEAKS = {
