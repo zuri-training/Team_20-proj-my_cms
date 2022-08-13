@@ -15,3 +15,9 @@ Images:   https://github.com/zuri-training/Team_20-proj-my_cms/tree/main/Templat
 HTML File: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/faq.html
 CSS File: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/faq.css
 Images: https://github.com/zuri-training/Team_20-proj-my_cms/tree/main/Templates/Core/faq-images
+
+3. Dashboard Analytics Page:
+HTML File: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Dashboard%20Analytics%20Page/analytics.html
+CSS File: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Dashboard%20Analytics%20Page/analytics.css
+Javascript: https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Dashboard%20Analytics%20Page/analytics.js
+Images: https://github.com/zuri-training/Team_20-proj-my_cms/tree/main/Templates/Dashboard%20Analytics%20Page/images

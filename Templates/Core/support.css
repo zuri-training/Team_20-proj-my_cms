@@ -229,14 +229,26 @@ color:var(--clr-dark)
 .p-one{
 color:var(--clr-dark)
 }
+.inputContainer{
+    background-color: var(--clr-white);
+    width: 250px;
+    padding: 10px;
+    height: 30px;
+    margin-top: 50px;
+    padding-left: 10px;
+    margin-left: 100px;
+    border-radius: 5px;
+    
+}
 .search-1{
     margin-left: 0;
     background-color: var(--clr-white);
-    border-right: none;
+    border: none;
+    outline: none;
     
-    padding-bottom: 3px;
     
 }
+
 .sec-2{
     display: flex;
     justify-content: space-between;
@@ -253,26 +265,31 @@ color:var(--clr-dark)
     justify-content: space-between;
     margin-bottom: 100px;
 
-    border-top: 2px solid black;
+    border-top: 2px solid ;
+    border-top-color: var(--clr-dark);
 }
 .ftn-1{
 text-align: center;
 }
 .gtn-a{
     padding-left: 60px;
-    border-right: 2px solid black;
+    border-right: 2px solid;
+    border-right-color: var(--clr-dark);
     width: 50%;
+    padding-bottom: 20px;
     
 }
 .gtn-b{
     margin:auto;
     padding: 10px;
     padding-right: 90px;
+    padding-bottom:20px ;
     
 }
 .gtn-c{
     padding-left: 60px;
-    border-right:2px solid black ;
+    border-right:2px solid  ;
+    border-right-color: var(--clr-dark);
     width: 50%;
     padding-top: 50px;
 }
@@ -295,6 +312,7 @@ text-align: center;
     
     
 }
+
 
 /* MEDIA QUERIES FOR the NAV */
 @media screen and (min-width:1035px){
