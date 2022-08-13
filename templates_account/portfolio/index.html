@@ -1,5 +1,6 @@
+{% load cms_tags menu_tags sekizai_tags %}
 {% load static %}
-{% load cms_tags sekizai_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="{% static 'css/portfolio/styles.css' %}">
 </head>
 <body>
-
+    {% cms_toolbar %}
     <section class="first-section">
         <header>
             <div class="header">
@@ -30,6 +31,9 @@
                 </nav>
             </div>
         </header>
+       
+        {% placeholder "content" %}
+        
         <Main class="container">
             <p id="user-occupation">Nature Photographer</p>
             <h1 id="user-occupation-description">
