@@ -79,4 +79,4 @@ def dashboard(request):
     return render(request, 'dashboard.html')
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'about-us.html')
