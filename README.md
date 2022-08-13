@@ -6,9 +6,24 @@ A platform that allows users spin up a basic website - allow as much customizati
 
 This project, ***Dsyne***, is a project initiative introduced by the Zuri team. It is a uplatform that allows users spin up a basic website and allow as much customizations as possible.
 
+## Architecture
+
+Monolith
+Postgres
+
+## Project Folder Structure
+
+accounts  # Account management
+blog  # Blog management
+contributors  # Contributor management
+dsyne  # Main App with settings.py
+portfolio  # Portfolio management
+static  # Static files
+template  # Template folder for FE ENGRS
+templates_accounts  # Template folder for Main APP (Dsyne)
+
 ## Objectives
 
-- 
 -
 
 ## Technologies Used
@@ -27,8 +42,7 @@ This project, ***Dsyne***, is a project initiative introduced by the Zuri team. 
 - Unique address
 - Ability to add social media links
 
-
-## Dsyne Key features and release dates
+## Key features and release dates
 
 > Landing page
 > FAQ/ContactUs Page
