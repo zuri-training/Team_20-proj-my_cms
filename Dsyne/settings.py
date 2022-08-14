@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import dj_database_url
 import os
 from pathlib import Path
 from decouple import config
@@ -36,7 +37,7 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 if not DEBUG:
-    ALLOWED_HOSTS = [config("ALLOWED_HOSTS")]
+    ALLOWED_HOSTS = [config("ALLOWED_HOSTS"), '*']
 
 
 # Application definition
@@ -81,6 +82,7 @@ INSTALLED_APPS = [
     "treebeard",
     "sekizai",
     "translations",
+    "whitenoise.runserver_nostatic",
 ]
 
 MIDDLEWARE = [
@@ -99,6 +101,7 @@ MIDDLEWARE = [
     "cms.middleware.page.CurrentPageMiddleware",
     "cms.middleware.toolbar.ToolbarMiddleware",
     "cms.middleware.language.LanguageCookieMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = "Dsyne.urls"
@@ -133,7 +136,6 @@ CMS_TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "Dsyne.wsgi.application"
-
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -178,6 +180,10 @@ if POSTGRES_READY:
             "PORT": POSTGRES_PORT,
         }
     }
+
+
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -292,3 +298,5 @@ JAZZMIN_UI_TWEAKS = {
     "theme": "flatly",
     "dark_mode_theme": "darkly",
 }
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
