@@ -25,8 +25,8 @@
     <section class="first-section">
         <header class="nav-container">
             <a href="{% url 'dsyne' %}" class="logo-container">
-              <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
-              <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
+              <img src="{% static 'media/images/clr-logo.svg' %}" alt="logo" class="logo top-image">
+              <img src="{% static 'media/images/logo.svg' %}" alt="logo" class="logo">
             </a>
             <nav class="nav-bar" id="nav-links">
               <ul class="nav-items">
@@ -69,7 +69,7 @@
                     <p>Discover the platform that enables <br> you to independently design, enhance,<br> and expand your web presence.</p>
                     <a href="{% url 'register' %}" class="btn secondary-btn hero-section-btn"> Get started</a>
                 </div>
-                <img src="{% static 'images/Frame 2.png' %}" alt="Hero-image">
+                <img src="{% static 'media/images/Frame 2.png' %}" alt="Hero-image">
             </div>
         </main>
     </section>
@@ -111,7 +111,7 @@
             </p>
         <!-- THE animation goes here -->
         <article class="article-content">
-            <img src="{% static 'images/articleOne.png' %}" alt="" id="image">
+            <img src="{% static 'media/images/articleOne.png' %}" alt="" id="image">
         </article>
         <!-- THE animation goes here -->
         </div>
@@ -155,7 +155,7 @@
     </section>
     <!-- END OF SECTION THREE -->
     <section class="fourth-section flex">
-        <div><img src="{% static 'images/dsyne features 1.png' %}" class="fourth-setion-img" alt=""></div>
+        <div><img src="{% static 'media/images/dsyne features 1.png' %}" class="fourth-setion-img" alt=""></div>
         <div><h4> One Platform, <br> all the features.</h4></div>
     </section>
     <!-- END OF SECTION THREE -->
@@ -201,7 +201,7 @@
             </div>
             <div class="footer-list">
                 <h4>Company</h4>
-                <a class="Footer-links" href="'{% url 'about' %}' ">About DSYNE</a>
+                <a class="Footer-links" href="{% url 'about' %}">About DSYNE</a>
                 <a class="Footer-links" href="{% url 'contact' %}">Contact Us</a>
             </div>
             <div class="footer-list">
@@ -212,7 +212,7 @@
             </div>
             <div class="footer-list last-footer-list">
                 <a href="index.html" class="logo-container">
-                    <img src="{% static 'images/dsyne 2 LOGO 1.png' %}" alt="logo" class="logo footer-logo">
+                    <img src="{% static 'media/images/dsyne 2 LOGO 1.png' %}" alt="logo" class="logo footer-logo">
                   </a>
                 <p>Dsyne is the leading website builder platform for all content creators, irrespective of language and geographical boundaries.</p>
                 <p>2022 Dsyne.com</p>
