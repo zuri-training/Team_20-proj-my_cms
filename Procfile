@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn Dsyne.wsgi --log-file -
+web: gunicorn dsyne.wsgi --log-file -
