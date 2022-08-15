@@ -54,14 +54,11 @@
                         {% placeholder "nav" %}
 
                         <li><a class="nav-links" href="{% url 'about' %}">About</a></li>
-<<<<<<< HEAD
                         <li><a class="nav-links" href="index.html">Work</a></li>
                         <li><a class="nav-links" href="contact.html">Contact</a></li>
                         {% endblock content3 %}
-=======
                         <li><a class="nav-links" href="{% url 'index' %}">Work</a></li>
                         <li><a class="nav-links" href="{% url 'contact' %}">Contact</a></li>
->>>>>>> d579be48b24b78fe84e8081b900944104cc9ad14
                     </ul>
                 </nav>
             </div>
@@ -150,15 +147,12 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
+           <a href="{%  %}"></a>
     </footer>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-=======
-    </div>
-</footer>
 <script src="{https://code.iconify.design/2/2.2.1/iconify.min.js}"></script>
->>>>>>> d579be48b24b78fe84e8081b900944104cc9ad14
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    {% render_block 'js' %}
 </body>
 
 </html>
