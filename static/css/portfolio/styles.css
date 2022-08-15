@@ -5,6 +5,17 @@
 div.cms .cms-toolbar-item-logo a:before {
     display: none;
 }
+#use{
+padding: 10px;
+border-radius: 5px;
+width:30%;
+height:10vh;
+border-style: none;
+border:0ch;
+background-color:blue;
+color:white;
+margin: auto;
+}
 
 *,
 *::before,
