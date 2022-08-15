@@ -36,6 +36,7 @@ SECRET_KEY = config(
 DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
+
 if not DEBUG:
     ALLOWED_HOSTS = [config("ALLOWED_HOSTS"), '*']
 
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
 
     # django-admin style for django_cms
     "djangocms_admin_style",
+    'djangocms_text_ckeditor',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -60,7 +62,7 @@ INSTALLED_APPS = [
     "cloudinary",
     # internal app
     "blog",
-    "portfolio",
+   
     # main app
     "account",
     # for django filer
@@ -82,7 +84,10 @@ INSTALLED_APPS = [
     "treebeard",
     "sekizai",
     "translations",
+    'tinymce',
+     "portfolio",
     "whitenoise.runserver_nostatic",
+
 ]
 
 MIDDLEWARE = [
@@ -129,11 +134,9 @@ TEMPLATES = [
 
 # templates config for django_cms
 CMS_TEMPLATES = [
-    ("landing-page.html", "Home page template"),
-    ("template.html", "templates page"),
-    ("contact-us.html", "contact page"),
-    ("support.html", "support page"),
-]
+    ("base.html", "Empty template"),
+    ("portfolio/index.html", "portfolio template"),
+]  
 
 WSGI_APPLICATION = "Dsyne.wsgi.application"
 
@@ -275,7 +278,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Dsyne",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "../static/images/dsyne 2 LOGO 1.png",
+    "site_logo": "../static/media/images/dsyne 2 LOGO 1.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,
@@ -299,4 +302,11 @@ JAZZMIN_UI_TWEAKS = {
     "dark_mode_theme": "darkly",
 }
 
+# CKEDITOR_SETTINGS = {
+#     'language': '{{ language }}',
+#     'toolbar': 'CMS',
+#     'skin': 'moono',
+# }
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+

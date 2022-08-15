@@ -45,6 +45,8 @@ urlpatterns = [
     path('faq/', views.questions, name='faq'),
     # path for django_cms
     re_path(r"^admin/", admin.site.urls),
-    re_path(r"^", include("cms.urls")),
+    re_path(r"^sketch", include("cms.urls")),
+    re_path(r"^tinymce/", include("tinymce.urls")),
+
     # urls for media
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

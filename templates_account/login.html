@@ -12,6 +12,31 @@
 </head>
 <body>
     <header class="nav-container">
+
+        <a href="{% url 'dsyne' %}" class="logo-container">
+            <img src="{% static 'images/clr-logo.svg' %}" alt="logo" class="logo top-image">
+            <img src="{% static 'images/logo.svg' %}" alt="logo" class="logo">
+        </a>
+        <nav class="nav-bar" id="nav-links">
+            <ul class="nav-items">
+                <li><a class="nav-links hidden-for-mobile" href="{% url 'templates' %}">Templates</a></li>
+                <li id="select-field" class="hidden-for-mobile">
+                    <a class="nav-links" id="drop-btn" href="{% url 'templates' %}">Build website <span id="drop-down"
+                            data-icon="ic:baseline-arrow-drop-down" class="iconify"></span></a>
+                    <div class="drop-menu" id="drop-menu">
+                        <p>Choose a template</p>
+                        <ul id="drop-list">
+                            <li><a class="drop-down-options" href="#">Blog</a></li>
+                            <!-- <li><a class="drop-down-options"href="ecom.html">Ecommerce</a></li> -->
+                            <li><a class="drop-down-options" href="{% url 'portfolio' %}">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav-links" href="{% url 'contact' %}">Contact us</a></li>
+            </ul>
+            <!-- toggle button for switchind theme goes here -->
+            <div class="wrapper-color-switch">
+
         <div>
             <a href="{% url 'dsyne' %}" class="logo-container">
                 <img src="{% static 'images_T/clr-logo.svg' %}" alt="logo" class="logo top-image">

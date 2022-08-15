@@ -1,0 +1,11 @@
+<html>
+<section>
+    <h3>{{ instance.title }}</h3>
+    <div>
+        {% autoescape off %}
+        {{ instance.body }}
+        {% endautoescape %}
+    </div>
+</section>
+
+</html>

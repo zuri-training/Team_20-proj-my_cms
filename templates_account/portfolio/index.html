@@ -1,37 +1,84 @@
+{% load cms_tags menu_tags sekizai_tags static %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio template</title>
     <link rel="stylesheet" href="{% static 'css/portfolio/styles.css' %}">
+    <style type="text/css">
+        .nav {
+            padding-left: 0;
+        }
+
+        .nav li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    {% render_block "css" %}
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
+
 <body>
+    {% cms_toolbar %}
     <section class="first-section">
         <header>
             <div class="header">
                 <div class="logo-section">
                     <div class="logo-img-bg">
+                        {% block content1 %}
+                        {% placeholder "logo" %}
+
                         <a href="{% url 'portfolio' %}">Logo</a>
+                        {% endblock content1 %}
                     </div>
-                    <h1>Site Name</h1>
+                    <h1>
+                        {% block content2 %}
+                        {% placeholder "site_name" %}
+
+                        Site Name</h1>
+                    {% endblock content2 %}
                 </div>
                 <!-- Navigation Bar -->
                 <nav class="navbar">
                     <ul class="nav-container">
+                        {% show_menu 0 100 100 100 %}
+                        {% block content3 %}
+                        {% placeholder "nav" %}
+
                         <li><a class="nav-links" href="{% url 'about' %}">About</a></li>
+<<<<<<< HEAD
+                        <li><a class="nav-links" href="index.html">Work</a></li>
+                        <li><a class="nav-links" href="contact.html">Contact</a></li>
+                        {% endblock content3 %}
+=======
                         <li><a class="nav-links" href="{% url 'index' %}">Work</a></li>
                         <li><a class="nav-links" href="{% url 'contact' %}">Contact</a></li>
+>>>>>>> d579be48b24b78fe84e8081b900944104cc9ad14
                     </ul>
                 </nav>
             </div>
         </header>
+
+        {% block content4 %}
+        {% placeholder "section1" %}
+        {% endblock content4 %}
         <Main class="container">
             <p id="user-occupation">Nature Photographer</p>
             <h1 id="user-occupation-description">
-                HI, I am a new pharagraph, you  can edit me either by double tapping or by pressing the edit button at the top right corner of this page. 
+                {% block content11 %}
+                {% placeholder "section 2" %}
+
+                HI, I am a new pharagraph, you can edit me either by double tapping or by pressing the edit button at
+                the top right corner of this page.
+                {% endblock content11 %}
             </h1>
         </Main>
     </section>
@@ -39,39 +86,79 @@
     <section class=" second-section container">
         <div class="second-section-container">
             <div class="column-1">
-                <div class="column1-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-1.png' %}" alt="" class="images"></div>
-                <div class="column2-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-img-4.png' %}" alt="" class="images column2-images-style"></div>
+                <div class="column1-images-bg bg-style">
+                    {% block content5 %}
+                    {% placeholder "image1" %}
+
+                    <img src="{% static 'media/portfolio/portfolio-1.png' %}" alt="" class="images">
+                </div>
+                {% endblock content5 %}
+                <div class="column2-images-bg bg-style">
+                    {% block content6 %}
+                    {% placeholder "image2" %}
+
+                    <img src="{% static 'media/portfolio/portfolio-img-4.png' %}" alt=""
+                        class="images column2-images-style">
+                </div>
+                {% endblock content6 %}
             </div>
             <div class="column-2">
-                <div class="column2-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-img-3.png' %}" alt="" class="images column2-images-style"></div>
-                <div class="column1-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-img-2.png' %}" alt="" class="images"></div>
+                <div class="column2-images-bg bg-style">
+                    {% block content7 %}
+                    {% placeholder "image3" %}
+
+                    <img src="{% static 'media/portfolio/portfolio-img-3.png' %}" alt=""
+                        class="images column2-images-style">
+                </div>
+                <div class="column1-images-bg bg-style"><img src="{% static 'media/portfolio/portfolio-img-2.png' %}"
+                        alt="" class="images"></div>
+                {% endblock content7 %}
             </div>
         </div>
-        <form >
+        <form>
+            {% block content8 %}
+            {% placeholder "contact" %}
+
             <input type="text" class="message" placeholder="Send a Message">
             <button type="submit" class="btn">Contact</button>
+            {% endblock content8 %}
         </form>
     </section>
     <!-- footerrrr -->
-<footer class="container">
-    <div class="footer">
-        <p>2022 JohnDoe@Dsgne.com</p>
-        <div class="call-number">
-            <p>Call:</p>
-            <p>+234 098 765 432</p>
-        </div>
-        <div>
-            <p>Follow:</p><br>
-            <div class="social-icon">
-                <span class="iconify" data-icon="ant-design:facebook-filled"></span>
-                <span class="iconify" data-icon="ant-design:instagram-filled"></span>
-                <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
-                <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
+    <footer class="container">
+        <div class="footer">
+            {% block content9 %}
+            {% placeholder "footer" %}
+
+            <p>2022 JohnDoe@Dsgne.com</p>
+            <div class="call-number">
+                <p>Call:</p>
+                <p>+234 098 765 432</p>
+                {% endblock content9 %}
+            </div>
+            <div>
+                <p>Follow:</p><br>
+                <div class="social-icon">
+                    {% block content10 %}
+                    {% placeholder "social links" %}
+
+                    <span class="iconify" data-icon="ant-design:facebook-filled"></span>
+                    <span class="iconify" data-icon="ant-design:instagram-filled"></span>
+                    <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                    <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
+                    {% endblock content10 %}
+                </div>
             </div>
         </div>
+<<<<<<< HEAD
+    </footer>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+=======
     </div>
 </footer>
 <script src="{https://code.iconify.design/2/2.2.1/iconify.min.js}"></script>
+>>>>>>> d579be48b24b78fe84e8081b900944104cc9ad14
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
+
 </html>
