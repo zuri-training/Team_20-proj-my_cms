@@ -1,12 +1,19 @@
 # The below class is for the Portfolio App.
-from django.db import models
 
+from django.db import models
+from tinymce.models import HTMLField
 from django.contrib.auth import get_user_model
+from cms.models.pluginmodel import CMSPlugin
 
 # define user field by importing from django
 User = get_user_model()
 
 # Certification Model that returns certification name
+
+
+class Text(CMSPlugin):
+    Title = models.CharField(max_length=300, default='Text')
+    Body = HTMLField()
 
 
 class Certification(models.Model):

@@ -8,3 +8,7 @@ def portfolio(request):
 
 def about(request):
     return render(request, "portfolio/about.html")
+
+def edit(request):
+    return render(request, 'base.html')
+
