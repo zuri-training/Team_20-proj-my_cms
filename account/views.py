@@ -8,7 +8,7 @@ from multiprocessing import context
 from account.forms import RegistrationForm
 
 
-# # Create your views here.
+# Create your views here.
 def signin(request):
     if request.user.is_authenticated:
         return redirect("/")
@@ -79,10 +79,4 @@ def dashboard(request):
     return render(request, 'dashboard.html')
 
 def about(request):
-    return render(request, 'about.html')
-
-
-
-
-
-
+    return render(request, 'about-us.html')

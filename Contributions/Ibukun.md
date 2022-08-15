@@ -13,4 +13,4 @@ My Responsibilities and Tasks are Listed Below:
 - wrote, reviewed and implemented the code for JS toggle functionality for the Templates section on the Landing page: > https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/Dsgne%20Landing%20page/landing-page.html
 - wrote, reviewed and implemented the code for JS toggle functionality for the Templates section on the Landing page: > https://github.com/zuri-training/Team_20-proj-my_cms/blob/main/Templates/Core/Dsgne%20Landing%20page/index.js
 
-Taking my total code contributions to 25 commits, 2,772 lines of code written. 
+
