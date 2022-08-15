@@ -62,11 +62,11 @@
         </p>
         <form action="#" method="post" id="contact-us-form" onsubmit="return formValidate()">
             <label for="name">Full Name</label><br>
-            <input type="text" name="fullname" id="full-name" autofocus required><br><br>
+            <input type="text" name="fullname" id="full-name" autofocus placeholder="James Brown" required><br><br>
             <label for="email">E-mail</label><br>
-            <input type="email" name="email" id="e-mail" required><br><br>
+            <input type="email" name="email" id="email" required><br><br>
             <label for="Number">Phone Number</label><br>
-            <input type="tel" id="phone" pattern="+[0-9]{3}[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+            <input type="tel" id="phone" pattern="+[0-9]{3}[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+234-813-224-4567" required><br><br>
             <label for="Message">Message</label><br>
             <textarea name="message" id="" cols="30" rows="10" required></textarea><br><br>
             <input type="submit" name="Send message" id="submitmessage" value="Send Message">
