@@ -1,2 +1,0 @@
-- name: Azure Login
-  uses: Azure/login@v1
