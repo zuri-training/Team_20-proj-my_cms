@@ -5,7 +5,7 @@ from .models import Text
 from django.utils.translation import gettext_lazy as _
 
 
-@plugin_pool.register_plugin
+# @plugin_pool.register_plugin
 class TextPlugin(CMSPluginBase):
     model = Text
     render_template = 'text.html'
