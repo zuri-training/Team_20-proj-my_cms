@@ -35,7 +35,7 @@ SECRET_KEY = config(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['dsyne.azurewebsites.net', '*']
 
 if not DEBUG:
     ALLOWED_HOSTS = [config("ALLOWED_HOSTS"), '*']
@@ -62,7 +62,7 @@ INSTALLED_APPS = [
     "cloudinary",
     # internal app
     "blog",
-   
+
     # main app
     "account",
     # for django filer
@@ -85,7 +85,7 @@ INSTALLED_APPS = [
     "sekizai",
     "translations",
     'tinymce',
-     "portfolio",
+    "portfolio",
     "whitenoise.runserver_nostatic",
 
 ]
@@ -136,7 +136,7 @@ TEMPLATES = [
 CMS_TEMPLATES = [
     ("base.html", "Empty template"),
     ("portfolio/index.html", "portfolio template"),
-]  
+]
 
 WSGI_APPLICATION = "Dsyne.wsgi.application"
 
@@ -146,43 +146,54 @@ WSGI_APPLICATION = "Dsyne.wsgi.application"
 
 # DATABASES = {}
 
-# if DEBUG:
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
-# else:
-# DATABASES = {
-#     "default": dj_database_url.config()
-# }
-
-POSTGRES_DB = config("POSTGRES_DB")
-POSTGRES_PASSWORD = config("POSTGRES_PASSWORD")
-POSTGRES_USER = config("POSTGRES_USER")
-POSTGRES_HOST = config("POSTGRES_HOST")
-POSTGRES_PORT = config("POSTGRES_PORT")
-
-POSTGRES_READY = (
-    POSTGRES_DB is not None
-    and POSTGRES_PASSWORD is not None
-    and POSTGRES_USER is not None
-    and POSTGRES_HOST is not None
-    and POSTGRES_PORT is not None
-)
-
-if POSTGRES_READY:
+if DEBUG:
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": POSTGRES_DB,
-            "USER": POSTGRES_USER,
-            "PASSWORD": POSTGRES_PASSWORD,
-            "HOST": POSTGRES_HOST,
-            "PORT": POSTGRES_PORT,
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+else:
+    DATABASES = {
+        "default": {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'dsyne',
+            'USER': 'highb33kay@dsyne-db',
+            'PASSWORD': config("POSTGRES_PASSWORD"),
+            'HOST': 'dsyne-db.postgres.database.azure.com',
+            'PORT': '5432',
+            'OPTIONS': {
+                'sslmode': 'require'
+            }
+        }
+    }
+
+
+# POSTGRES_DB = config("POSTGRES_DB")
+# POSTGRES_PASSWORD = config("POSTGRES_PASSWORD")
+# POSTGRES_USER = config("POSTGRES_USER")
+# POSTGRES_HOST = config("POSTGRES_HOST")
+# POSTGRES_PORT = config("POSTGRES_PORT")
+
+# POSTGRES_READY = (
+#     POSTGRES_DB is not None
+#     and POSTGRES_PASSWORD is not None
+#     and POSTGRES_USER is not None
+#     and POSTGRES_HOST is not None
+#     and POSTGRES_PORT is not None
+# )
+
+# if POSTGRES_READY:
+#     DATABASES = {
+#         "default": {
+#             "ENGINE": "django.db.backends.postgresql",
+#             "NAME": POSTGRES_DB,
+#             "USER": POSTGRES_USER,
+#             "PASSWORD": POSTGRES_PASSWORD,
+#             "HOST": POSTGRES_HOST,
+#             "PORT": POSTGRES_PORT,
+#         }
+#     }
 
 
 db_from_env = dj_database_url.config(conn_max_age=600)
@@ -291,10 +302,6 @@ JAZZMIN_SETTINGS = {
 
     # Welcome text on the login screen
     "welcome_sign": "Welcome to the Dsyne CMS"
-
-
-
-
 }
 
 JAZZMIN_UI_TWEAKS = {
@@ -309,4 +316,3 @@ JAZZMIN_UI_TWEAKS = {
 # }
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-

@@ -1,3 +1,5 @@
 {
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "appService.defaultWebAppToDeploy": "/subscriptions/f9128045-d57d-46f0-9589-87eee332ba18/microsoft.web/sites/subscriptions/f9128045-d57d-46f0-9589-87eee332ba18/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/dsyne",
+  "appService.deploySubpath": "."
 }
