@@ -35,10 +35,7 @@ SECRET_KEY = config(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=False, cast=bool)
 
-ALLOWED_HOSTS = ['dsyne.azurewebsites.net', '*']
-
-if not DEBUG:
-    ALLOWED_HOSTS = [config("ALLOWED_HOSTS"), '*']
+ALLOWED_HOSTS = ['dsyne.azurewebsites.net']
 
 
 # Application definition
