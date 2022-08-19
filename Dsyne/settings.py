@@ -155,10 +155,10 @@ else:
         "default": {
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'dsyne',
-            'USER': 'highb33kay@dsyne-db',
+            'USER': config('POSTGRES_USER'),
             'PASSWORD': config("POSTGRES_PASSWORD"),
-            'HOST': 'dsyne-db.postgres.database.azure.com',
-            'PORT': '5432',
+            'HOST': config("POSTGRES_HOST"),
+            'PORT': config("POSTGRES_PORT"),
             'OPTIONS': {
                 'sslmode': 'require'
             }
@@ -242,16 +242,16 @@ USE_L10N = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = "/static/"
 
+# The URL to use when referring to static files (where they will be served from)
+STATIC_URL = '/static/'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 # add the directory of your static files here.
 # Make sure the name are different from those of other static files
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    # e.g "/var/www/static/",
-]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # media urls for django_cms
 MEDIA_URL = "/media/"
@@ -311,5 +311,3 @@ JAZZMIN_UI_TWEAKS = {
 #     'toolbar': 'CMS',
 #     'skin': 'moono',
 # }
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
