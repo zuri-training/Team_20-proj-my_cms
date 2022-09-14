@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'dsyne'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E190692035104E98875922632E471F16 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_97BC82ADC9E14988A3FEB5AEC4BAD37A }}
